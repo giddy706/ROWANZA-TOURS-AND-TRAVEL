@@ -1,0 +1,483 @@
+{
+  "tours": [
+    {
+      "id": "1",
+      "title": "5-Day Maasai Mara Safari",
+      "location": "Maasai Mara",
+      "price": 750,
+      "duration": "5 days",
+      "reviews": 0,
+      "image": "assets/images/top-destination/01.png",
+      "category": "kenya",
+      "tripType": "Safari",
+      "isTopSelling": true,
+      "description": "Experience the Big Five and Great Migration. Authentic Maasai culture. Experience the world-famous Maasai Mara, home of the Big Five and the breathtaking Great Wildebeest Migration. This safari offers unmatched wildlife encounters, golden savannah sunsets, and authentic Maasai cultural experiences."
+    },
+    {
+      "id": "2",
+      "title": "4-Day Diani Beach Escape",
+      "location": "Diani Beach",
+      "price": 450,
+      "duration": "4 days",
+      "reviews": 85,
+      "image": "assets/images/top-destination/02.png",
+      "category": "kenya",
+      "tripType": "Beach",
+      "isTopSelling": false,
+      "description": "Relax on powder-white sand beaches. Kisite Marine Park snorkeling."
+    },
+    {
+      "id": "3",
+      "title": "3-Day Mount Kenya Adventure",
+      "location": "Mount Kenya",
+      "price": 350,
+      "duration": "3 days",
+      "reviews": 60,
+      "image": "assets/images/top-destination/03.png",
+      "category": "kenya",
+      "tripType": "Adventure",
+      "isTopSelling": false,
+      "description": "Trek through alpine meadows on Africa’s 2nd-highest mountain."
+    },
+    {
+      "id": "4",
+      "title": "2-Day Lake Nakuru Tour",
+      "location": "Lake Nakuru",
+      "price": 200,
+      "duration": "2 days",
+      "reviews": 45,
+      "image": "assets/images/top-destination/04.png",
+      "category": "kenya",
+      "tripType": "Safari",
+      "isTopSelling": false,
+      "description": "Witness thousands of flamingos and the majestic white rhinos."
+    },
+    {
+      "id": "5",
+      "title": "6-Day Serengeti & Ngorongoro Safari",
+      "location": "Serengeti National Park",
+      "price": 1200,
+      "duration": "6 days",
+      "reviews": 120,
+      "image": "assets/images/tours/01.png",
+      "category": "africa",
+      "tripType": "Safari",
+      "isTopSelling": true,
+      "description": "Explore the vast plains of the Serengeti and the stunning Ngorongoro Crater."
+    },
+    {
+      "id": "6",
+      "title": "5-Day Zanzibar Island Retreat",
+      "location": "Zanzibar Island",
+      "price": 750,
+      "duration": "5 days",
+      "reviews": 85,
+      "image": "assets/images/tours/02.png",
+      "category": "africa",
+      "tripType": "Honeymoon",
+      "isTopSelling": false,
+      "description": "Escape to the spice island of Zanzibar for sun, sand, and Stone Town culture."
+    },
+    {
+      "id": "7",
+      "title": "4-Day Victoria Falls Adventure",
+      "location": "Victoria Falls",
+      "price": 600,
+      "duration": "4 days",
+      "reviews": 0,
+      "image": "uploads/1771660327671-942568189.jpg",
+      "category": "africa",
+      "tripType": "Adventure",
+      "isTopSelling": false,
+      "description": "Experience the thunderous beauty of the Mosi-oa-Tunya (The Smoke that Thunders)."
+    },
+    {
+      "id": "8",
+      "title": "7-Day Wonders of Egypt",
+      "location": "Cairo & Nile River",
+      "price": 900,
+      "duration": "7 days",
+      "reviews": 150,
+      "image": "assets/images/tours/04.png",
+      "category": "africa",
+      "tripType": "Family",
+      "isTopSelling": false,
+      "description": "Discover the pyramids, the Sphinx, and the timeless beauty of the Nile."
+    },
+    {
+      "title": "Nairobi National Park Full Day Safari",
+      "location": "Nairobi National Park",
+      "price": 120,
+      "duration": "Day Trip",
+      "category": "kenya",
+      "isTopSelling": true,
+      "description": "The only park in the world within a city. Home to lions, rhinos, and giraffes.",
+      "reviews": 12,
+      "image": "uploads/1771614042680-702475716.webp",
+      "id": "1771615470608"
+    },
+    {
+      "title": "5 Days Mombasa Beach & Coastal Experience",
+      "location": "5 Days Mombasa Beach & Coastal Experience",
+      "price": 3000,
+      "duration": "5 days",
+      "category": "kenya",
+      "isTopSelling": true,
+      "description": "Escape to the tropical coastline of Mombasa for five days of sun, culture, and ocean adventure. Relax on white sandy beaches, explore the historic Fort Jesus, stroll through Old Town, and enjoy optional marine excursions like snorkeling and dolphin tours. This package blends beach relaxation with rich Swahili heritage — perfect for couples, families, and holidaymakers seeking a complete coastal getaway",
+      "reviews": 0,
+      "id": "1771662909991",
+      "image": "uploads/1771662909971-751613053.jpg"
+    },
+    {
+      "title": "Tsavo East & West – 3 Days Safari Adventure",
+      "location": "Tsavo East & West – 3 Days Safari Adventure",
+      "price": 200,
+      "duration": "3 days",
+      "category": "kenya",
+      "isTopSelling": false,
+      "description": "Experience Kenya’s wild beauty on a 3-day adventure through Tsavo East National Park and Tsavo West National Park. Discover the famous red elephants, dramatic volcanic landscapes, and the crystal-clear waters of Mzima Springs. With thrilling game drives, breathtaking scenery, and fewer crowds, this safari offers an authentic and unforgettable wildlife experience perfect for both local and international travelers.",
+      "reviews": 0,
+      "id": "1771663107766",
+      "image": "uploads/1771663141047-446332559.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "2",
+      "name": "David Chen",
+      "origin": "Sydney, Australia",
+      "rating": 5,
+      "comment": "Unforgettable experience at Diani Beach. The snorkeling at Kisite was a highlight of my trip."
+    },
+    {
+      "id": "3",
+      "name": "Elena Rodriguez",
+      "origin": "Madrid, Spain",
+      "rating": 4,
+      "comment": "A truly authentic encounter with wildlife. The guides were incredibly knowledgeable."
+    }
+  ],
+  "locations": [
+    {
+      "id": "loc_1",
+      "title": "Maasai Mara",
+      "category": "kenya",
+      "tripType": "Safari",
+      "price": 750,
+      "description": "Experience the world-famous Maasai Mara, home of the Big Five and the breathtaking Great Wildebeest Migration.",
+      "images": [
+        "uploads/1771580476535-333576941.jpg",
+        "uploads/1771580476558-567863141.webp",
+        "uploads/1771580476562-12329790.jpg",
+        "uploads/1771580476630-544783485.jpg",
+        "uploads/1771580476632-172547894.jpg"
+      ],
+      "overview": "The Maasai Mara National Reserve, located in southwestern Kenya along the Tanzanian border, is one of Africa’s most iconic safari destinations. It forms part of the greater Serengeti–Mara ecosystem, famous for the annual Great Wildebeest Migration, when over 1.3 million wildebeest, zebras, and gazelles cross the Mara River in search of greener pastures. Beyond the migration, the reserve offers year-round wildlife viewing, with abundant populations of lions, cheetahs, leopards, elephants, and giraffes roaming its rolling savannahs and acacia-dotted landscapes..",
+      "included": "✔️ Return transport (4x4 Safari Land Cruiser or Safari Van)\n\n✔️ Park entry fees to Maasai Mara\n\n✔️ Accommodation (Luxury Lodge / Mid-range Camp / Budget Camp options)\n\n✔️ Full board meals (Breakfast, Lunch & Dinner)\n\n✔️ Daily morning & evening game drives\n\n✔️ Professional English-speaking safari guide\n\n✔️ Bottled drinking water during game drives\n\n✔️ Pick-up and drop-off (Nairobi hotel or airport)",
+      "additional": "• Carry sunscreen and a hat\n• Binoculars are recommended\n• Respect wildlife distance",
+      "cancellation": "• 100% refund if canceled 48h before\n• No refund for no-shows",
+      "expect": "🐾 Thrilling Game Drives\n\nWake up before sunrise and head into the savannah as predators begin their hunt. Expect close encounters with lions, elephants, cheetahs, giraffes, zebras, buffalo, and more.\n\n🌅 Stunning African Sunsets\n\nGolden skies stretching across endless plains — perfect for photography and photography.\n\n🐃 The Big Five Experience\n\nSpot Africa’s most iconic wildlife in their natural habitat.\n\n🎈 Optional Hot Air Balloon Safari\n\nFloat above the Mara at sunrise and enjoy champagne breakfast in the wild.\n\n居住 Cultural Connection\n\nVisit a traditional Maasai village and learn about their rich traditions, dance, and lifestyle.",
+      "reviews": [
+        {
+          "name": "Sarah J.",
+          "date": "Jan 2024",
+          "rating": 5,
+          "comment": "An absolute dream! Seeing the Great Migration was a bucket list item for me, and Rowanza made it seamless. Our guide was incredibly knowledgeable."
+        },
+        {
+          "name": "Michael T.",
+          "date": "Nov 2023",
+          "rating": 5,
+          "comment": "The best safari experience ever. We saw all the Big Five in just two days! Highly recommend the balloon safari."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the best time to visit for the migration?",
+          "answer": "The Great Migration typically reaches the Maasai Mara between July and October."
+        },
+        {
+          "question": "Are there charging ports in the safari vehicles?",
+          "answer": "Yes, all our 4x4 Land Cruisers are equipped with universal charging ports for your cameras and phones."
+        }
+      ]
+    },
+    {
+      "id": "loc_2",
+      "title": "Diani Beach",
+      "category": "kenya",
+      "tripType": "Beach",
+      "price": 450,
+      "description": "Relax on powder-white sand beaches. Kisite Marine Park snorkeling.",
+      "images": [
+        "uploads/1771582371463-672707905.jpg",
+        "uploads/1771582371464-477514687.jpg",
+        "uploads/1771582371474-904241108.webp",
+        "uploads/1771582371481-74832387.avif"
+      ],
+      "overview": "Diani Beach, located on Kenya’s south coast in Kwale County about 30 km south of Mombasa, is often ranked among the world’s most beautiful beaches. Stretching over 10 km, it boasts powdery white sands, turquoise Indian Ocean waters, swaying palm trees, and a vibrant Swahili culture. It’s a perfect destination for relaxation, water sports, honeymoon escapes, or combining a safari with a beach holiday. The laid-back atmosphere makes it feel uncrowded despite its popularity.\n\n\n",
+      "included": "- Accommodation in beachfront resorts, boutique hotels, or luxury villas\n- Daily breakfast (half-board/full-board options available)\n- Airport or road transfers from Mombasa or Ukunda airstrip\n- Guided excursions (snorkeling, diving, dhow cruises)\n- Access to private beach areas and swimming pools\n- Optional cultural tours and visits to nearby attractions\n",
+      "additional": "- Accessibility: 1-hour drive south of Mombasa; flights available to Ukunda airstrip.\n- Activities: Scuba diving, kite surfing, snorkeling, camel rides, bike tours, and dhow sailing.\n- Nearby attractions: Shimba Hills National Reserve, Wasini Island, Kisite Marine Park.\n- Dining: Fresh seafood, Swahili cuisine, and international options along the beach.\n",
+      "cancellation": "- 50% refund for cancellations made 7–20 days before arrival.\n- No refund for cancellations within 7 days of arrival.\n- Date changes allowed subject to availability.\n",
+      "expect": "day 1.\n- Relaxation on pristine beaches with warm turquoise waters and soft white sand.\n- Adventure activities like diving among coral reefs, kite surfing, and deep-sea fishing.\nday 2.\n- Cultural immersion through Swahili-inspired architecture, local markets, and village tours.\n- Romantic experiences such as sunset dhow cruises and private beach dinners.\nday 3.\n- Day trips to nearby reserves for wildlife viewing, offering a safari-and-sea combination.\nday 4. \nreturn back home\n\n\n",
+      "reviews": [
+        {
+          "name": "Alice M.",
+          "date": "Dec 2023",
+          "rating": 5,
+          "comment": "Diani Beach is paradise! The sand is so white and the water is warm. Rowanza took care of all our transfers and the resort was amazing."
+        },
+        {
+          "name": "Robert K.",
+          "date": "Oct 2023",
+          "rating": 4,
+          "comment": "Great beach holiday. The snorkeling trip to Wasini Island was fantastic. Would go again."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is Diani Beach safe for swimming?",
+          "answer": "Yes, Diani Beach has calm, shallow waters protected by a coral reef, making it very safe for swimming."
+        },
+        {
+          "question": "How do I get to Diani from Nairobi?",
+          "answer": "You can take a 1-hour flight from Wilson Airport to Ukunda Airstrip followed by a short taxi drive."
+        }
+      ]
+    },
+    {
+      "id": "loc_3",
+      "title": "Mount Kenya",
+      "category": "kenya",
+      "tripType": "Adventure",
+      "price": 350,
+      "description": "Trek through alpine meadows on Africa’s 2nd-highest mountain.",
+      "images": [
+        "uploads/1771610212604-906822456.jpg",
+        "uploads/1771610212617-888209332.jpg",
+        "uploads/1771610212620-907266007.jpg",
+        "uploads/1771610212627-816929680.jpg",
+        "uploads/1771610212638-516032784.jpg"
+      ],
+      "overview": "Mount Kenya is the second-highest mountain in Africa and a UNESCO World Heritage site. Its ancient volcanic slopes are covered in diverse flora, including giant lobelias and groundsels, leading up to dramatic jagged peaks and permanent glaciers. For trekkers, its various routes offer stunning scenery, from moorlands to alpine deserts, and it is less crowded than Kilimanjaro, providing a more intimate wilderness experience.",
+      "included": "• Professional Mountain Guide\n• Porter services for gear\n• All meals during the trek\n• Camping equipment and park fees",
+      "additional": "• High-altitude gear required\n• Physical fitness is essential\n• Best hiking months: Jan-Feb and Aug-Sept",
+      "cancellation": "• Full refund for 7-day notice\n• 50% refund for 48h notice",
+      "expect": "Day 1: Hike through bamboo forest to Old Moses Camp\nDay 2: Trek to Shipton's Camp with stunning peak views\nDay 3: Summit Point Lenana and descend"
+    },
+    {
+      "id": "loc_4",
+      "title": "Lake Nakuru",
+      "category": "kenya",
+      "tripType": "Safari",
+      "price": 200,
+      "description": "Witness thousands of flamingos and the majestic white rhinos.",
+      "images": [
+        "uploads/1771611268609-155844767.jpg",
+        "uploads/1771611268614-54080967.png",
+        "uploads/1771611268733-336416183.jpg",
+        "uploads/1771611268736-645795821.jpg",
+        "uploads/1771611268745-196732969.jpg",
+        "uploads/1771611268751-393880838.jpg"
+      ],
+      "overview": "Nestled in the Great Rift Valley, Lake Nakuru National Park is famous for its vast shallow lake that often appears pink due to millions of lesser flamingos. It is also a premier sanctuary for both black and white rhinos, and offers high chances of spotting leopards resting on acacia trees. The park's diverse habitats range from rocky escarpments to yellow-fever acacia forests.",
+      "included": "• Round-trip transport from Nairobi\n• Certified safari guide\n• Game drives and park entry\n• Bottled water and picnic lunch",
+      "additional": "• Bring binoculars for bird watching\n• Early morning starts are best\n• Camera with good zoom recommended",
+      "cancellation": "• 100% refund for 48h notice\n• No refund for no-shows",
+      "expect": "6:00 AM: Departure\n10:00 AM: Start Game Drive\n1:00 PM: Picnic at Out of Africa lookout\n4:00 PM: Evening game drive"
+    },
+    {
+      "id": "loc_5",
+      "title": "Serengeti National Park",
+      "category": "africa",
+      "tripType": "Safari",
+      "price": 1200,
+      "description": "Explore the vast plains of the Serengeti and the stunning Ngorongoro Crater.",
+      "images": [
+        "uploads/1771610710157-59842420.jpg",
+        "uploads/1771610710161-624920407.jpg",
+        "uploads/1771610710181-332179042.jpg",
+        "uploads/1771610710182-634286929.avif",
+        "uploads/1771610710193-178574187.jpg"
+      ],
+      "overview": "The Serengeti is perhaps the world's most famous wildlife sanctuary. Its name comes from the Maasai word 'Siringet', meaning 'endless plains'. It host the largest terrestrial mammal migration on earth. The park’s ecosystem supports the densest population of lions and other big cats in Africa, thriving on the millions of herbivores that traverse its landscapes annually.",
+      "included": "• Luxury tented accommodation\n• All meals and beverages\n• 4x4 open-sided safari vehicles\n• Expert naturalist guides",
+      "additional": "• Valid yellow fever certificate required\n• Best migration time: June to October\n• Pack light, neutral-colored clothing",
+      "cancellation": "• 30% deposit non-refundable\n• Full balance refund for 60-day notice",
+      "expect": "Day 1: Arrival and sunset game drive\nDay 2-3: Full day exploring different regions of the Serengeti\nDay 4: Ngorongoro Crater rim walk"
+    },
+    {
+      "id": "loc_6",
+      "title": "Zanzibar Island",
+      "category": "africa",
+      "tripType": "Honeymoon",
+      "price": 750,
+      "description": "Escape to the spice island of Zanzibar for sun, sand, and Stone Town culture.",
+      "images": [
+        "uploads/1771612283608-403474826.jpg",
+        "uploads/1771612283610-239518663.jpg",
+        "uploads/1771612283634-141188203.png",
+        "uploads/1771612283875-643724888.jpg",
+        "uploads/1771612283887-401660669.jpg",
+        "uploads/1771612283910-258073628.jpg"
+      ],
+      "overview": "Zanzibar, the 'Spice Island', is an archipelago off the coast of Tanzania. It is a sensory delight of turquoise waters, white sand beaches, and the historic Stone Town—a labyrinth of narrow alleys and carved wooden doors. Famous for its cloves, nutmeg, and cinnamon, the island offers a blend of African, Arab, and Indian influences that create a unique and romantic atmosphere.",
+      "included": "• Boutique beach resort stay\n• Stone Town walking tour\n• Spice plantation excursion\n• Airport transfers",
+      "additional": "• Modest dress required in Stone Town\n• Sun protection is vital\n• USD or local currency used for tips",
+      "cancellation": "• 100% refund for 14-day notice\n• 50% refund for 7-day notice",
+      "expect": "Day 1: Relax at Nungwi beach\nDay 2: Historical Stone Town exploration\nDay 3: Spice farm and sunset dhow cruise"
+    },
+    {
+      "id": "loc_7",
+      "title": "Nairobi National Park",
+      "category": "kenya",
+      "tripType": "Safari",
+      "price": 120,
+      "description": "experience the lovely Nairobi national park the only park in the city",
+      "images": [
+        "uploads/1771614042680-702475716.webp",
+        "uploads/1771614042694-733668856.jpg",
+        "uploads/1771614042698-158070818.jpeg",
+        "uploads/1771614042704-763165273.jpg",
+        "uploads/1771614042711-903462773.jpg",
+        "uploads/1771614042722-224354877.jpg"
+      ],
+      "overview": "Experience wild Africa just minutes from the city center at Nairobi National Park — the only national park in the world located next to a capital city.\n\nWith the skyline of Nairobi in the background, this unique safari destination offers incredible wildlife sightings including lions, rhinos, giraffes, zebras, buffalo, and over 400 bird species.\n\nPerfect for travelers with limited time, layovers, business visitors, families, and locals looking for a quick escape into nature.\n\nWhether it’s a sunrise game drive or a relaxed afternoon safari, Nairobi National Park delivers a true African wildlife experience without leaving the city.",
+      "included": "• ✔️ Hotel or airport pick-up & drop-off (Nairobi)\n\n✔️ Park entry fees\n\n✔️ 4x4 Safari vehicle with pop-up roof\n\n✔️ Professional English-speaking guide/driver\n\n✔️ Bottled drinking water\n\n✔️ Morning or afternoon game drive (4–5 hours)",
+      "additional": "• Best time for game drives: Early morning (6:00 AM) or late afternoon\n\nDuration: Half-day (4–5 hrs) or Full-day experience\n\nWildlife highlights: Black rhinos, lions, giraffes, buffalo, hyenas, cheetahs (occasionally)\n\nNo elephants in the park\n\nIdeal for layovers and short stays\n\nGreat year-round destination",
+      "cancellation": "•48+ hours before tour: 100% refund\n\n24–48 hours: 50% refund\n\nLess than 24 hours: No refund\n\nDate changes allowed subject to availability",
+      "expect": "👀 What To Expect\n🌅 Sunrise Game Drive\n\nDepart early as predators are most active. Expect stunning golden light photography with wildlife against the Nairobi skyline.\n\n🦏 Rhino Encounters\n\nNairobi National Park is one of Kenya’s best places to spot endangered black rhinos.\n\n🦒 Wildlife Near the City\n\nSee giraffes, zebras, antelopes, and possibly lions just minutes from the city center — a truly unique experience.\n\n📸 Incredible Photography Moments\n\nThe contrast of wild animals with urban skyscrapers creates one-of-a-kind safari photos."
+    },
+    {
+      "id": "loc_9",
+      "title": "Victoria Falls",
+      "category": "africa",
+      "tripType": "Adventure",
+      "price": 600,
+      "description": "Experience the thunderous beauty of the Mosi-oa-Tunya (The Smoke that Thunders).",
+      "images": [
+        "uploads/1771659653209-898753402.jpg",
+        "uploads/1771659653215-414405158.jpg",
+        "uploads/1771659653226-149245818.jpg",
+        "uploads/1771659653227-410025018.jpg",
+        "uploads/1771659653238-9387529.webp"
+      ],
+      "overview": "Victoria Falls, one of the Seven Natural Wonders of the World, is located on the Zambezi River at the border between Zambia and Zimbabwe. Known as 'Mosi-oa-Tunya', it is the largest curtain of falling water in the world, creating a spectacular spray that can be seen from miles away. The surrounding rainforest offers unique flora and fauna, kept lush by the constant mist.",
+      "included": "• Guided tour of the Falls (Zimbabwe & Zambia sides)\n• Rainforest walk entry fees\n• Sunset dinner cruise on the Zambezi\n• Hotel pick-up and drop-off",
+      "additional": "• Ponchos recommended for the Falls walk\n• Visa requirements vary by nationality\n• Best flow: February to May",
+      "cancellation": "• 100% refund for 72h notice\n• 50% refund for 24h notice",
+      "expect": "Day 1: Arrival and sunset dhow cruise\nDay 2: Full tour of the falls and rainforest walk\nDay 3: Optional helicopter 'Flight of Angels' or bungee jump"
+    },
+    {
+      "id": "loc_8",
+      "title": "Cairo & Nile River",
+      "category": "africa",
+      "tripType": "Family",
+      "price": 900,
+      "description": "Discover the pyramids, the Sphinx, and the timeless beauty of the Nile.",
+      "images": [
+        "uploads/1771660268672-60868599.jpg",
+        "uploads/1771660268673-602760083.jpg",
+        "uploads/1771660268694-209500745.jpg",
+        "uploads/1771660268696-842209514.webp",
+        "uploads/1771660268698-144117925.avif",
+        "uploads/1771660268704-844849011.avif"
+      ],
+      "overview": "Step back in time in Egypt, the cradle of civilization. Cairo is a vibrant metropolis that guards the Great Pyramids of Giza and the enigmatic Sphinx. A journey down the Nile River on a traditional Felucca or a luxury cruiser reveals the ancient temples of Luxor and Aswan, where history is etched into every stone. It is a destination that balances ancient wonder with modern Egyptian hospitality.",
+      "included": "• Private Egyptologist guide\n• Pyramid and Sphinx entry fees\n• 3-night Nile River cruise\n• All internal transfers",
+      "additional": "• Stay hydrated and avoid raw tap water\n• Tipping (Baksheesh) is customary\n• Respect local customs during Ramadan",
+      "cancellation": "• Full refund for 30-day notice\n• 20% cancellation fee otherwise",
+      "expect": "Day 1: Pyramids and Egyptian Museum\nDay 2: Fly to Aswan, board Nile cruise\nDay 3: Kom Ombo temple and Edfu"
+    },
+    {
+      "title": "Tsavo East & West – 3 Days Safari Adventure",
+      "category": "kenya",
+      "price": 200,
+      "description": "Experience Kenya’s wild beauty on a 3-day adventure through Tsavo East National Park and Tsavo West National Park. Discover the famous red elephants, dramatic volcanic landscapes, and the crystal-clear waters of Mzima Springs. With thrilling game drives, breathtaking scenery, and fewer crowds, this safari offers an authentic and unforgettable wildlife experience perfect for both local and international travelers.",
+      "tripType": "Safari",
+      "overview": "Discover the untamed wilderness of Kenya on this exciting 3-day safari to Tsavo East National Park and Tsavo West National Park — two of the largest and most diverse national parks in East Africa.\n\nFamous for the legendary “Red Elephants” dusted in Tsavo’s rich red soil, dramatic landscapes, volcanic hills, lava flows, and crystal-clear springs, Tsavo offers a raw and less crowded safari experience.\n\nThis package is perfect for travelers seeking wide-open savannahs, rugged beauty, and exceptional wildlife viewing away from heavy tourist traffic.\n\nIdeal for:\n\nAdventure seekers 🐾\n\nCouples & honeymooners 💍\n\nFamilies 👨‍👩‍👧‍👦\n\nPhotographers 📸\n\nCoastal travelers from Mombasa & Diani",
+      "included": "✔️ Return transport from Nairobi, Mombasa, or Diani Beach\n\n✔️ Park entry fees (Tsavo East & West)\n\n✔️ 4x4 Safari Land Cruiser with pop-up roof\n\n✔️ Professional English-speaking safari guide\n\n✔️ 2 nights accommodation (Luxury Lodge / Mid-range / Budget Camp options)\n\n✔️ Full board meals (Breakfast, Lunch & Dinner)\n\n✔️ Bottled drinking water during game drives\n\n✔️ Pick-up and drop-off to hotel/airport",
+      "additional": "Travel time from Nairobi: Approx. 4–5 hours by road\n\nTravel time from Mombasa/Diani: Approx. 2–3 hours\n\nWildlife highlights: Red elephants, lions, leopards, buffalo, giraffes, zebras, hippos, crocodiles",
+      "cancellation": "30+ days before travel: 100% refund (minus processing fees)\n\n15–29 days before travel: 70% refund\n\n7–14 days before travel: 50% refund\n\nLess than 7 days: No refund\n\nDate changes allowed subject to availability",
+      "expect": "Day 1 – Tsavo East Exploration\n\nArrive at Tsavo East National Park and begin your first game drive across the vast open plains. Spot the famous red elephants, lions, and large herds of buffalo. Visit the scenic Aruba Dam, a hotspot for wildlife viewing.\n\n Day 2 – Tsavo West & Mzima Springs\n\nTransfer to Tsavo West National Park, known for its volcanic landscapes and dramatic scenery. Visit the stunning Mzima Springs, where you can view hippos and crocodiles in crystal-clear water.\n\n Day 3 – Morning Game Drive & Return\n\nEnjoy an early morning safari when predators are most active. Capture final wildlife sightings before returning to your departure city.",
+      "id": "loc_1771661763326",
+      "images": [
+        "uploads/1771663278971-360993324.jpg",
+        "uploads/1771663278974-18443008.jpg",
+        "uploads/1771663278977-589126444.jpg",
+        "uploads/1771663278985-685358791.jpg",
+        "uploads/1771663278989-17009287.jpg",
+        "uploads/1771663278992-540946022.webp"
+      ]
+    },
+    {
+      "title": "5 Days Mombasa Beach & Coastal Experience",
+      "category": "kenya",
+      "price": 300,
+      "description": "Escape to the tropical coastline of Mombasa for five days of sun, culture, and ocean adventure. Relax on white sandy beaches, explore the historic Fort Jesus, stroll through Old Town, and enjoy optional marine excursions like snorkeling and dolphin tours. This package blends beach relaxation with rich Swahili heritage — perfect for couples, families, and holidaymakers seeking a complete coastal getaway. ",
+      "tripType": "Beach",
+      "overview": "Escape to Kenya’s tropical coastline and experience the perfect blend of relaxation, culture, and adventure in Mombasa.\n\nFrom white sandy beaches and turquoise waters to rich Swahili culture and historic landmarks, Mombasa offers a complete coastal getaway. This 5-day tour combines beach relaxation, marine adventures, cultural exploration, and optional safari add-ons for a well-rounded holiday experience.\n\nIdeal for:\n\nCouples & honeymooners 💍\n\nFamilies 👨‍👩‍👧‍👦\n\nBeach lovers 🌊\n\nInternational tourists\n\nCorporate retreats",
+      "included": "professional tour guide\naccomodation\nmeals\ntransport",
+      "additional": "Best time to visit: June–October & December–March\n\nClimate: Warm tropical weather year-round\n\nCurrency: Kenyan Shilling (USD widely accepted in resorts)\n\nIdeal for relaxation & light adventure\n\nPerfect safari + beach combination destination\n\nNearby Highlights:\n\nFort Jesus\n\nHaller Park\n\nOld Town Mombasa\n\nNyali & Bamburi Beaches",
+      "cancellation": "30+ days before travel: 100% refund (minus processing fees)\n\n15–29 days before travel: 70% refund\n\n7–14 days before travel: 50% refund\n\nLess than 7 days: No refund\n\nDate changes allowed subject to availability",
+      "expect": "Day 1 – Arrival & Beach Relaxation\n\nArrive at Moi International Airport in Mombasa, where our team will warmly welcome you and transfer you to your beach resort. After check-in, spend the rest of the day relaxing on the white sandy beaches or enjoying the hotel’s swimming pool and ocean views. Dinner and overnight at the resort.\n\n Day 2 – Mombasa City & Cultural Tour\n\nAfter breakfast, explore the rich history and culture of Mombasa. Visit the iconic Fort Jesus, a UNESCO World Heritage Site that tells the story of the coastal Swahili civilization.\n\nWalk through the narrow streets of Old Town, admire Swahili architecture, visit local markets, and experience authentic coastal cuisine. Return to your resort in the afternoon for relaxation.\n\n Day 3 – Marine Adventure / Wasini Island Excursion\n\nEnjoy an exciting ocean adventure. Take a boat ride to Wasini Island for snorkeling in coral reefs and dolphin spotting (seasonal). Swim in crystal-clear waters and enjoy a fresh Swahili seafood lunch.\n\nReturn to the hotel in the late afternoon for leisure time.\n\n Day 4 – Free Day or Optional Excursions\n\nThis day is yours to enjoy at your own pace. Relax by the beach, indulge in spa treatments, or choose optional activities such as:\n\nDhow sunset cruise\n\nVisit to Haller Park\n\nDay trip to Diani Beach\n\n1-Day Safari to Tsavo East National Park\n\nDay 5 – Departure\n\nAfter breakfast, enjoy your final moments by the beach before check-out. You will then be transferred to Moi International Airport for your departure flight, marking the end of your unforgettable coastal holiday.",
+      "id": "loc_1771662709471",
+      "images": [
+        "uploads/1771662709400-493157598.jpg",
+        "uploads/1771662709405-560881303.jpg",
+        "uploads/1771662709422-742757119.jpg",
+        "uploads/1771662709446-91279406.jpg",
+        "uploads/1771662709449-282675490.jpg",
+        "uploads/1771662709456-801776239.webp"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": "1",
+      "image": "assets/images/list-gallery/01.png",
+      "caption": "Majestic Lion"
+    },
+    {
+      "id": "3",
+      "image": "assets/images/list-gallery/03.png",
+      "caption": "Graceful Giraffe"
+    },
+    {
+      "id": "1771757925578",
+      "caption": "safari",
+      "image": "uploads/1771757925538-623633044.jpg"
+    },
+    {
+      "id": "1771757958803",
+      "caption": "wildlife",
+      "image": "uploads/1771757958793-841404327.jpg"
+    },
+    {
+      "id": "1771788416461",
+      "caption": "maasai mara",
+      "image": "uploads/1771788416425-107728689.jpg"
+    },
+    {
+      "id": "1771788593357",
+      "caption": "Diani beach",
+      "image": "uploads/1771788593348-642986424.webp"
+    },
+    {
+      "id": "1771788616947",
+      "caption": "LAKE NAKURU",
+      "image": "uploads/1771788616903-384306057.jpg"
+    },
+    {
+      "id": "1771788640457",
+      "caption": "NAIVASHA",
+      "image": "uploads/1771788640449-124795657.jpg"
+    }
+  ],
+  "siteConfig": {
+    "contactPhone": "+254 717446976",
+    "whatsappNumber": "254711249680",
+    "contactEmail": "info@rowanzatours.com"
+  },
+  "reviews": []
+}

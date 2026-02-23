@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:49:09 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind83a7.css?v=1.9">
+    <link rel="stylesheet" href="assets/css/style83a7.css?v=1.9">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- Iconify -->
+    <script src="./code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    <script src="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+    <!-- Masonry -->
+    <script src="./cdn.jsdelivr.net/npm/masonry-layout%404/dist/masonry.pkgd.min.js"></script>
+    <!-- Fancybox -->
+    <link href="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.css" rel="stylesheet" />
+    <script src="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- NoUiSlider -->
+    <link rel="stylesheet" href="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css">
+    <!-- jQuery -->
+    <script src="./code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Moment.js -->
+    <script src="./cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- Daterangepicker -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <title>ROWANZA TOURS AND TRAVELS</title>
+</head>
+
+<body class="antialiased font-urbanist">
+    <header class="w-full bg-white">
+        <div class="container flex items-center justify-between py-4 mx-auto">
+            <div class="menu-toggle cursor-pointer block lg:hidden">
+                <span class="iconify" data-icon="fe:bar" data-width="24" data-height="24"></span>
+            </div>
+            <div class="header-logo flex items-center gap-2">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" class="w-auto h-10">
+                </a>
+            </div>
+            <nav class="header-menu mx-8 relative">
+                <div class="close-menu-toggle lg:hidden absolute top-2.5 right-2.5">
+                    <span class="iconify" data-icon="ic:sharp-clear" data-width="22" data-height="22"></span>
+                </div>
+                <ul class="flex justify-center lg:gap-4 xl:gap-10 text-base font-semibold text-black">
+                    <li><a href="index.html" class=" transition-all duration-200 hover:text-green-zomp">Home</a></li>
+                    <li><a href="destinations.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Destinations</a></li>
+                    <li><a href="tours.html" class=" transition-all duration-200 hover:text-green-zomp text-black">Tour
+                            Packages</a></li>
+                    <li><a href="about-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">About Us</a></li>
+                    <li><a href="gallery.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Gallery</a></li>
+                    <li><a href="contact-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:0717446976"
+                        class="dynamic-phone flex items-center gap-2 font-bold text-black border border-stroke p-2 rounded-lg hover:bg-green-light transition duration-200">
+                        <span class="iconify text-green-zomp" data-icon="ph:phone-call-bold"></span>
+                        <span class="phone-text">0717446976</span>
+                    </a>
+                </div>
+                <a href="contact-us.html"
+                    class="text-white text-base font-semibold py-2.5 px-6 bg-green-zomp rounded-[200px] transition duration-200 hover:bg-green-zomp-hover shadow-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="py-10 lg:py-12 border border-t-light-grey border-r-0 border-b-0 border-l-0">
+        <div class="container">
+            <nav class="font-medium text-grey" aria-label="Breadcrumb">
+                <ul class="flex flex-wrap items-center gap-1 mb-2">
+                    <li><a href="index.html" class="transition duration-200 hover:text-green-zomp">Home</a></li><span
+                        class="mx-1">/</span>
+                    <li><span class="text-dark-grey">Cart</span></li>
+                </ul>
+            </nav>
+            <h1 class="text-black text-[40px] font-bold leading-[1.1em] mb-2">Cart</h1>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 lg:col-span-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full min-w-max border-collapse">
+                            <thead>
+                                <tr class="border-b border-light-grey">
+                                    <th class="py-5 pr-4 font-bold text-left"></th>
+                                    <th class="py-5 font-bold text-left">Product</th>
+                                    <th class="py-5 font-bold text-left" colspan="2"></th>
+                                    <th class="py-5 px-2 font-bold text-center">Price</th>
+                                    <th class="py-5 px-2 font-bold text-center">Quantity</th>
+                                    <th class="py-5 px-2 font-bold text-center">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items-container">
+                                <!-- Dynamic content will be injected here -->
+                            </tbody>
+                        </table>
+                        <div
+                            class="flex flex-wrap items-center justify-between gap-6 pt-6 pb-6 border-b border-light-grey">
+                            <div class="coupon">
+                                <div class="flex items-center gap-2">
+                                    <input type="text" name="coupon_code" id="coupon_code" required
+                                        placeholder="Coupon code"
+                                        class="min-w-20 md:min-w-96 rounded-2xl bg-white-grey p-4 font-medium placeholder:text-grey focus:outline-none" />
+                                    <button type="submit" name="apply_coupon" value="Apply coupon"
+                                        class="text-white whitespace-nowrap font-semibold bg-green-zomp p-4 rounded-[200px]">
+                                        Apply coupon
+                                    </button>
+                                </div>
+                            </div>
+                            <button onclick="location.reload()"
+                                class="text-white font-semibold bg-green-zomp p-4 rounded-[200px]">Update cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="bg-white-grey p-6 rounded-2xl mb-6">
+                        <h4 class="text-black text-2xl font-semibold mb-3">Cart totals</h4>
+                        <table class="w-full">
+                            <tr class="border-b border-[#D9D9D9] last:border-none">
+                                <th class="py-4 text-left">Subtotal</th>
+                                <td class="py-4 text-right">
+                                    <span class="font-medium" id="cart-subtotal">$0.00</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-[#D9D9D9] last:border-none">
+                                <th class="py-4 text-left text-xl font-bold">Total</th>
+                                <td class="py-4 text-right text-xl font-bold">
+                                    <strong id="cart-total">$0.00</strong>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="mt-2.5">
+                            <a href="checkout.html"
+                                class="text-white font-semibold bg-green-zomp p-4 rounded-[200px] w-full block text-center">
+                                Proceed to checkout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-black font-bold text-[32px] leading-[1.1em]">You may be interested in</h2>
+                <div class="flex items-center gap-4">
+                    <div class="swiper-button-prev interested-products-prev !relative !w-12 !h-12 !text-dark-grey !mt-0 !left-0 !right-0 rounded-full p-2 bg-white-grey transition duration-200 hover:!text-white hover:bg-green-zomp"
+                        style="--swiper-navigation-size: 20px"></div>
+                    <div class="swiper-button-next interested-products-next !relative !w-12 !h-12 !text-dark-grey !mt-0 !left-0 !right-0 rounded-full p-2 bg-white-grey transition duration-200 hover:!text-white hover:bg-green-zomp"
+                        style="--swiper-navigation-size: 20px"></div>
+                </div>
+            </div>
+
+            <div class="swiper interested-products-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/01.jpg"
+                                    alt="Waterproof Travel Backpack 40L"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Waterproof Travel Backpack 40L</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$89.99</span><span
+                                        class="text-red-500">$69.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/02.jpg"
+                                    alt="Portable Travel Organizer Set"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Portable Travel Organizer Set</a>
+                                </h4>
+                                <p class="text-black font-bold">$45.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/03.jpg"
+                                    alt="Compact Travel Camera"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Compact Travel Camera</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$299.99</span><span
+                                        class="text-red-500">$249.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/04.jpg"
+                                    alt="Universal Travel Adapter"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Universal Travel Adapter</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$24.99</span><span
+                                        class="text-red-500">$19.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/05.jpg"
+                                    alt="Travel Neck Pillow with Memory Foam"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Travel Neck Pillow with Memory Foam</a>
+                                </h4>
+                                <p class="text-black font-bold">$32.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/06.jpg"
+                                    alt="Portable Power Bank 20000mAh"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Portable Power Bank 20000mAh</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$55.00</span><span
+                                        class="text-red-500">$39.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/07.jpg"
+                                    alt="Travel Guidebook - Southeast Asia"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Travel Guidebook - Southeast Asia</a>
+                                </h4>
+                                <p class="text-black font-bold">$28.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/08.jpg"
+                                    alt="Lightweight Travel Towel Set"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Lightweight Travel Towel Set</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$18.50</span><span
+                                        class="text-red-500">$14.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/09.jpg"
+                                    alt="Travel Security Money Belt"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Travel Security Money Belt</a>
+                                </h4>
+                                <p class="text-black font-bold">$22.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/01.jpg"
+                                    alt="Portable Travel Luggage Scale"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Portable Travel Luggage Scale</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$15.99</span><span
+                                        class="text-red-500">$12.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/02.jpg"
+                                    alt="Travel First Aid Kit"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Travel First Aid Kit</a>
+                                </h4>
+                                <p class="text-base font-bold"><span
+                                        class="line-through text-dark-grey text-sm mr-2">$38.75</span><span
+                                        class="text-red-500">$29.99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="shop-items group border border-light-grey rounded-2xl overflow-hidden">
+                            <div class="aspect-[4/3] relative overflow-hidden"><img src="assets/images/shop/03.jpg"
+                                    alt="Waterproof Travel Document Holder"
+                                    class="w-full h-auto rounded-t-2xl object-cover transition duration-200 group-hover:scale-105"><a
+                                    href="cart.html"
+                                    class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-200"><button
+                                        class="py-3 px-[30px] bg-green-zomp text-white font-semibold rounded-[200px]">Add
+                                        to Cart</button></a></div>
+                            <div class="bg-white-grey p-4 rounded-b-2xl overflow-hidden">
+                                <h4
+                                    class="text-black line-clamp-2 font-medium mb-2 transition duration-200 hover:text-green-zomp">
+                                    <a href="#">Waterproof Travel Document Holder</a>
+                                </h4>
+                                <p class="text-black font-bold">$16.50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-darker-grey text-white overflow-hidden pt-16">
+        <div class="container pb-12">
+            <div class="flex flex-wrap md:flex-nowrap justify-between gap-10">
+                <div class="w-full md:w-[35%]">
+                    <img src="assets/images/logo-footer.png" alt="Logo" class="h-[50px] w-auto mb-7" />
+                    <p class="text-white-grey font-medium mb-10 italic">Luxury Safaris, Beach Escapes & Custom
+                        Adventures Across Kenya and Africa.</p>
+                    <ul class="space-y-4 text-grey">
+
+                        <li class="flex items-center gap-2">
+                            <span class="iconify" data-icon="ph:phone-call" data-width="20" data-height="20"></span>
+                            <a href="tel:0717446976"
+                                class="dynamic-phone hover:text-green-zomp transition italic">0717446976</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <a href="https://wa.me/254717446976"
+                                class="dynamic-whatsapp flex items-center gap-2 hover:text-green-zomp transition italic">
+                                <span class="iconify" data-icon="ic:baseline-whatsapp" data-width="20" data-height="20"
+                                    style="color: #25D366;"></span>
+                                <p class="whatsapp-text">+254 717 446 976</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Top Destinations</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="tours.html?category=kenya" class="hover:text-green-zomp transition">🇰🇪 Kenya
+                                Safaris</a></li>
+                        <li><a href="tours.html?category=africa" class="hover:text-green-zomp transition">🌍 Africa
+                                Tours</a></li>
+                        <li><a href="tours.html?tripType=Beach" class="hover:text-green-zomp transition">🏖 Beach
+                                Holidays</a></li>
+                        <li><a href="tours.html?tripType=Adventure" class="hover:text-green-zomp transition">🧗
+                                Adventure Trips</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Quick Links</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="about-us.html" class="hover:text-green-zomp transition">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-green-zomp transition">Our Gallery</a></li>
+                        <li><a href="contact-us.html" class="hover:text-green-zomp transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-dark-grey py-6 bg-black text-center text-grey">
+            <p>Copyright © 2026 Rowanza Tours and Travels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+    <script src="assets/js/api-client.js"></script>
+    <script src="assets/js/global-dynamic.js"></script>
+    <script src="assets/js/currency.js"></script>
+    <script src="assets/js/main.min83a7.js?v=1.9"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCart();
+
+            window.addEventListener('cartUpdated', renderCart);
+            window.addEventListener('currencyChange', renderCart);
+        });
+
+        function renderCart() {
+            const container = document.getElementById('cart-items-container');
+            const subtotalEl = document.getElementById('cart-subtotal');
+            const totalEl = document.getElementById('cart-total');
+
+            if (!container || !window.cartManager) return;
+
+            const items = window.cartManager.getItems();
+
+            if (items.length === 0) {
+                container.innerHTML = '<tr><td colspan="7" class="py-10 text-center text-dark-grey font-medium">Your cart is empty. <a href="tours.html" class="text-green-zomp underline">Browse Tours</a></td></tr>';
+                subtotalEl.textContent = '$0.00';
+                totalEl.textContent = '$0.00';
+                return;
+            }
+
+            container.innerHTML = items.map(item => `
+                <tr class="border-b border-light-grey">
+                    <td class="py-5 pr-4 text-left">
+                        <i class="iconify text-lg cursor-pointer hover:text-red-500 transition" data-icon="mdi:remove" onclick="cartManager.removeItem('${item.id}')"></i>
+                    </td>
+                    <td class="py-5 text-left">
+                        <a href="tours-details-style-01.html">
+                            <img src="${item.image}" alt="${item.title}" class="w-16 h-16 object-cover rounded-lg shadow-sm">
+                        </a>
+                    </td>
+                    <td class="py-5 text-left" colspan="2">
+                        <a href="tours-details-style-01.html" class="font-semibold hover:text-green-zomp transition">${item.title}</a>
+                        <p class="text-xs text-dark-grey">${item.location}</p>
+                    </td>
+                    <td class="py-5 px-2 text-center text-black font-medium">
+                        ${window.currencyManager ? window.currencyManager.formatPrice(item.price) : '$' + item.price}
+                    </td>
+                    <td class="py-5 px-2 text-center text-black">
+                        <div class="quantity-group flex items-center bg-white-grey rounded-lg w-28 mx-auto">
+                            <button type="button" class="p-2 flex items-center justify-center hover:text-green-zomp transition" onclick="cartManager.updateQuantity('${item.id}', ${item.quantity - 1})">
+                                <span class="iconify text-dark-grey" data-icon="prime:minus" data-width="14" data-height="14"></span>
+                            </button>
+                            <input type="number" value="${item.quantity}" min="1" class="w-8 bg-transparent text-center appearance-none focus:outline-none font-bold" readonly />
+                            <button type="button" class="p-2 flex items-center justify-center hover:text-green-zomp transition" onclick="cartManager.updateQuantity('${item.id}', ${item.quantity + 1})">
+                                <span class="iconify text-dark-grey" data-icon="prime:plus" data-width="14" data-height="14"></span>
+                            </button>
+                        </div>
+                    </td>
+                    <td class="py-5 px-2 text-center text-green-zomp font-bold">
+                        ${window.currencyManager ? window.currencyManager.formatPrice(item.price * item.quantity) : '$' + (item.price * item.quantity).toFixed(2)}
+                    </td>
+                </tr>
+            `).join('');
+
+            const total = window.cartManager.getCartTotal();
+            const formattedTotal = window.currencyManager ? window.currencyManager.formatPrice(total) : '$' + total.toFixed(2);
+
+            subtotalEl.textContent = formattedTotal;
+            totalEl.textContent = formattedTotal;
+        }
+    </script>
+
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"e5b67894212849e9aa27db559430d1b3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:49:09 GMT -->
+
+</html>

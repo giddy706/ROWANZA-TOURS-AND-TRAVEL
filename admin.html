@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowanza Tours - Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .active-tab {
+            border-bottom: 2px solid #11A191;
+            color: #11A191;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-sm border-b px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <img src="assets/images/logo.png" alt="Logo" class="h-8 w-auto">
+            <span class="font-bold text-xl text-[#322153]">Admin Dashboard</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="index.html" target="_blank"
+                class="text-gray-600 hover:text-[#11A191] flex items-center gap-1 font-medium">
+                <span class="iconify" data-icon="solar:home-linear"></span> View Site
+            </a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row gap-8">
+        <!-- Sidebar Navigation -->
+        <aside class="w-full md:w-64 flex-shrink-0">
+            <div class="bg-white rounded-2xl shadow-sm border p-4">
+                <ul class="space-y-2">
+                    <li>
+                        <button onclick="switchTab('locations')" id="tab-btn-locations"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 active-tab">
+                            <span class="iconify" data-icon="solar:map-point-linear" data-width="20"></span> Locations
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('tours')" id="tab-btn-tours"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 text-gray-500 hover:bg-gray-50">
+                            <span class="iconify" data-icon="solar:suitcase-linear" data-width="20"></span> Tour
+                            Packages
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('testimonials')" id="tab-btn-testimonials"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 text-gray-500 hover:bg-gray-50">
+                            <span class="iconify" data-icon="solar:chat-round-linear" data-width="20"></span>
+                            Testimonials
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('gallery')" id="tab-btn-gallery"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 text-gray-500 hover:bg-gray-50">
+                            <span class="iconify" data-icon="solar:gallery-linear" data-width="20"></span> Wildlife
+                            Gallery
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('bookings')" id="tab-btn-bookings"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 text-gray-500 hover:bg-gray-50">
+                            <span class="iconify" data-icon="solar:calendar-date-linear" data-width="20"></span>
+                            Bookings
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('inquiries')" id="tab-btn-inquiries"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 text-gray-500 hover:bg-gray-50">
+                            <span class="iconify" data-icon="solar:letter-linear" data-width="20"></span> Inquiries
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="switchTab('config')" id="tab-btn-config"
+                            class="w-full text-left px-4 py-3 rounded-xl font-semibold flex items-center gap-3 transition duration-200 text-gray-500 hover:bg-gray-50">
+                            <span class="iconify" data-icon="solar:settings-linear" data-width="20"></span> Site Config
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1">
+            <!-- Locations Tab -->
+            <div id="tab-locations" class="tab-content active">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-[#322153]">Manage Locations</h2>
+                    <button onclick="openModal('location')"
+                        class="bg-[#11A191] text-white px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#0e8a7c] transition">
+                        <span class="iconify" data-icon="solar:add-circle-linear"></span> Add New Location
+                    </button>
+                </div>
+                <div id="locations-list" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <!-- Loading state -->
+                    <div class="p-8 text-center text-gray-400 col-span-full">Loading locations...</div>
+                </div>
+            </div>
+
+            <!-- Tours Tab -->
+            <div id="tab-tours" class="tab-content">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-[#322153]">Manage Tour Packages</h2>
+                    <button onclick="openModal('tour')"
+                        class="bg-[#11A191] text-white px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#0e8a7c] transition">
+                        <span class="iconify" data-icon="solar:add-circle-linear"></span> Add New Tour
+                    </button>
+                </div>
+                <div id="tours-list" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <!-- Loading state -->
+                    <div class="p-8 text-center text-gray-400 col-span-full">Loading tours...</div>
+                </div>
+            </div>
+
+            <!-- Testimonials Tab -->
+            <div id="tab-testimonials" class="tab-content">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-[#322153]">Manage Testimonials</h2>
+                    <button onclick="openModal('testimonial')"
+                        class="bg-[#11A191] text-white px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#0e8a7c] transition">
+                        <span class="iconify" data-icon="solar:add-circle-linear"></span> Add Testimonial
+                    </button>
+                </div>
+                <div id="testimonials-list" class="space-y-4">
+                    <div class="p-8 text-center text-gray-400">Loading testimonials...</div>
+                </div>
+            </div>
+
+            <!-- Gallery Tab -->
+            <div id="tab-gallery" class="tab-content">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-[#322153]">Wildlife Gallery</h2>
+                    <button onclick="openModal('gallery')"
+                        class="bg-[#11A191] text-white px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#0e8a7c] transition">
+                        <span class="iconify" data-icon="solar:upload-linear"></span> Upload Photo
+                    </button>
+                </div>
+                <div id="gallery-list" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="p-8 text-center text-gray-400 col-span-full">Loading gallery...</div>
+                </div>
+            </div>
+
+            <!-- Bookings Tab -->
+            <div id="tab-bookings" class="tab-content">
+                <h2 class="text-2xl font-bold text-[#322153] mb-6">Customer Bookings</h2>
+                <div class="bg-white rounded-2xl shadow-sm border overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-gray-50 border-b">
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">ID</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Customer</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Items</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Total</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Payment</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Status</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Date</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600 text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookings-list">
+                                <tr>
+                                    <td colspan="5" class="px-6 py-8 text-center text-gray-400">Loading bookings...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiries Tab -->
+            <div id="tab-inquiries" class="tab-content">
+                <h2 class="text-2xl font-bold text-[#322153] mb-6">Customer Inquiries</h2>
+                <div class="bg-white rounded-2xl shadow-sm border overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-gray-50 border-b">
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Date</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Customer</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600">Message/Inquiry</th>
+                                    <th class="px-6 py-4 font-bold text-sm text-gray-600 text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="inquiries-list">
+                                <tr>
+                                    <td colspan="3" class="px-6 py-8 text-center text-gray-400">Loading inquiries...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Site Config Tab -->
+            <div id="tab-config" class="tab-content">
+                <h2 class="text-2xl font-bold text-[#322153] mb-6">Site Configuration</h2>
+                <div class="bg-white rounded-2xl shadow-sm border p-8 max-w-2xl">
+                    <form id="config-form" onsubmit="event.preventDefault(); saveConfig();" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Contact Phone</label>
+                            <input type="text" id="cfg-phone"
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">WhatsApp Number (e.g.,
+                                254...)</label>
+                            <input type="text" id="cfg-whatsapp"
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Contact Email</label>
+                            <input type="email" id="cfg-email"
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-[#11A191] text-white py-4 rounded-xl font-bold hover:bg-[#0e8a7c] transition shadow-lg">Save
+                            Configuration</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="tour-modal" class="fixed inset-0 bg-black/50 hidden z-[100] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl transition-all scale-95 opacity-0 modal-inner">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <h3 class="text-xl font-bold" id="tour-modal-title">Add Tour Package</h3>
+                <button onclick="closeModal('tour')" class="text-gray-400 hover:text-red-500"><span class="iconify"
+                        data-icon="ic:round-close" data-width="24"></span></button>
+            </div>
+            <form id="tour-form" onsubmit="event.preventDefault(); saveTour();"
+                class="p-8 space-y-4 max-h-[70vh] overflow-y-auto">
+                <input type="hidden" id="tour-id">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Tour Title</label>
+                        <input type="text" id="tour-title" required
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Location</label>
+                        <select id="tour-location" required
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                            <option value="">Select Location</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Price ($)</label>
+                        <input type="number" id="tour-price" required
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Duration</label>
+                        <input type="text" id="tour-duration" required
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"
+                            placeholder="e.g., 5 days">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Category</label>
+                        <select id="tour-category"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                            <option value="kenya">Kenya</option>
+                            <option value="africa">Africa</option>
+                        </select>
+                    </div>
+                    <div
+                        class="col-span-2 grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-gray-50 rounded-2xl border border-dashed">
+                        <div class="col-span-4 mb-2">
+                            <h4 class="text-xs font-bold uppercase text-gray-400">Custom Pricing & Extras</h4>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1">Adult Price ($)</label>
+                            <input type="number" id="tour-adult-price"
+                                class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-[#11A191]">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1">Child Price ($)</label>
+                            <input type="number" id="tour-child-price"
+                                class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-[#11A191]">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1">Park Fee ($)</label>
+                            <input type="number" id="tour-park-price"
+                                class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-[#11A191]">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold text-gray-500 mb-1">WiFi Fee ($)</label>
+                            <input type="number" id="tour-wifi-price"
+                                class="w-full border rounded-lg px-3 py-2 text-sm outline-none focus:border-[#11A191]">
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Image</label>
+                        <input type="file" id="tour-image" accept="image/*"
+                            onchange="previewImage(this, 'tour-preview')"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                        <img id="tour-preview" src="" class="hidden mt-2 w-full h-40 object-cover rounded-xl border">
+                        <p class="text-xs text-gray-400 mt-1">Leave blank if you don't want to change the current image.
+                        </p>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Short Description</label>
+                        <textarea id="tour-desc" required rows="3"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                    </div>
+                    <div class="col-span-2 flex items-center gap-2">
+                        <input type="checkbox" id="tour-top" class="w-5 h-5 accent-[#11A191]">
+                        <label for="tour-top" class="text-sm font-bold text-gray-700">Top Selling Tour</label>
+                    </div>
+                </div>
+                <div class="pt-4 flex gap-3">
+                    <button type="button" onclick="closeModal('tour')"
+                        class="flex-1 border py-4 rounded-xl font-bold hover:bg-gray-50 transition">Cancel</button>
+                    <button type="submit"
+                        class="flex-1 bg-[#11A191] text-white py-4 rounded-xl font-bold hover:bg-[#0e8a7c] transition">Save
+                        Tour</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Location Modal -->
+    <div id="location-modal" class="fixed inset-0 bg-black/50 hidden z-[100] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl transition-all scale-95 opacity-0 modal-inner">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <h3 class="text-xl font-bold" id="location-modal-title">Add Location</h3>
+                <button onclick="closeModal('location')" class="text-gray-400 hover:text-red-500"><span class="iconify"
+                        data-icon="ic:round-close" data-width="24"></span></button>
+            </div>
+            <form id="location-form" onsubmit="event.preventDefault(); saveLocation();"
+                class="p-8 space-y-4 max-h-[70vh] overflow-y-auto">
+                <input type="hidden" id="loc-id">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Location Title</label>
+                        <input type="text" id="loc-title" required
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Category</label>
+                        <select id="loc-category"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                            <option value="kenya">Kenya</option>
+                            <option value="africa">Africa</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Trip Type</label>
+                        <select id="loc-tripType"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                            <option value="Safari">Safari</option>
+                            <option value="Beach">Beach</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Honeymoon">Honeymoon</option>
+                            <option value="Family">Family</option>
+                        </select>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Starting Price ($)</label>
+                        <input type="number" id="loc-price" required
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Images (Max 10)</label>
+                        <input type="file" id="loc-images" accept="image/*" multiple
+                            onchange="previewMultipleImages(this, 'loc-preview')"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                        <p class="text-xs text-gray-400 mt-1">Hold Ctrl/Cmd to select multiple images.</p>
+                        <!-- Existing Images Preview -->
+                        <div id="loc-existing-images" class="mt-2 hidden"></div>
+                        <!-- New Upload Preview -->
+                        <div id="loc-preview" class="mt-2 hidden flex gap-2 flex-wrap"></div>
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Short Description (for cards)</label>
+                        <textarea id="loc-desc" required rows="2"
+                            class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                    </div>
+                    <div class="col-span-2 space-y-4 pt-4 border-t">
+                        <h4 class="font-bold text-[#322153]">Detailed Content (Tour Details Page)</h4>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Overview</label>
+                            <textarea id="loc-overview" rows="4" placeholder="Detailed overview of the destination..."
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">What's Included</label>
+                            <textarea id="loc-included" rows="4"
+                                placeholder="List items like: &#10;• Professional Guide &#10;• Transport &#10;• Meals"
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                            <p class="text-[10px] text-gray-400 mt-1">Tip: Use bullet points (•) for items.</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Additional Information</label>
+                            <textarea id="loc-additional" rows="4"
+                                placeholder="Things to carry, health requirements, etc..."
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Cancellation Policy</label>
+                            <textarea id="loc-cancellation" rows="4" placeholder="Refund rules and timelines..."
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">What To Expect (Itinerary)</label>
+                            <textarea id="loc-expect" rows="6" placeholder="Day 1: Arrival... &#10;Day 2: Safari..."
+                                class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                            <p class="text-[10px] text-gray-400 mt-1">Describe the day-by-day experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 flex gap-3">
+                    <button type="button" onclick="closeModal('location')"
+                        class="flex-1 border py-4 rounded-xl font-bold hover:bg-gray-50 transition">Cancel</button>
+                    <button type="submit"
+                        class="flex-1 bg-[#11A191] text-white py-4 rounded-xl font-bold hover:bg-[#0e8a7c] transition">Save
+                        Location</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="fixed inset-0 bg-black/50 hidden z-[100] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-3xl w-full max-w-md overflow-hidden shadow-2xl transition-all scale-95 opacity-0 modal-inner">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <h3 class="text-xl font-bold">Upload Photo</h3>
+                <button onclick="closeModal('gallery')" class="text-gray-400 hover:text-red-500"><span class="iconify"
+                        data-icon="ic:round-close" data-width="24"></span></button>
+            </div>
+            <form id="gallery-form" onsubmit="event.preventDefault(); uploadGallery();" class="p-8 space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Photo</label>
+                    <input type="file" id="gallery-file" required accept="image/*"
+                        class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Caption</label>
+                    <input type="text" id="gallery-caption"
+                        class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                </div>
+                <div class="pt-4 flex gap-3">
+                    <button type="button" onclick="closeModal('gallery')"
+                        class="flex-1 border py-4 rounded-xl font-bold hover:bg-gray-50 transition">Cancel</button>
+                    <button type="submit"
+                        class="flex-1 bg-[#11A191] text-white py-4 rounded-xl font-bold hover:bg-[#0e8a7c] transition">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Testimonial Modal -->
+    <div id="testimonial-modal" class="fixed inset-0 bg-black/50 hidden z-[100] flex items-center justify-center p-4">
+        <div
+            class="bg-white rounded-3xl w-full max-w-md overflow-hidden shadow-2xl transition-all scale-95 opacity-0 modal-inner">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50">
+                <h3 class="text-xl font-bold">Add Testimonial</h3>
+                <button onclick="closeModal('testimonial')" class="text-gray-400 hover:text-red-500"><span
+                        class="iconify" data-icon="ic:round-close" data-width="24"></span></button>
+            </div>
+            <form id="testimonial-form" onsubmit="event.preventDefault(); saveTestimonial();" class="p-8 space-y-4">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Client Name</label>
+                    <input type="text" id="test-name" required
+                        class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Origin (City, Country)</label>
+                    <input type="text" id="test-origin" required
+                        class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Comment</label>
+                    <textarea id="test-comment" required rows="4"
+                        class="w-full border rounded-xl px-4 py-3 outline-none focus:border-[#11A191]"></textarea>
+                </div>
+                <div class="pt-4 flex gap-3">
+                    <button type="button" onclick="closeModal('testimonial')"
+                        class="flex-1 border py-4 rounded-xl font-bold hover:bg-gray-50 transition">Cancel</button>
+                    <button type="submit"
+                        class="flex-1 bg-[#11A191] text-white py-4 rounded-xl font-bold hover:bg-[#0e8a7c] transition">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/api-client.js"></script>
+    <script src="assets/js/admin.js"></script>
+    <script>
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('aside button').forEach(b => {
+                b.classList.remove('active-tab');
+                if (!b.id.includes(tab)) b.classList.add('text-gray-500', 'hover:bg-gray-50');
+            });
+
+            document.getElementById('tab-' + tab).classList.add('active');
+            const btn = document.getElementById('tab-btn-' + tab);
+            btn.classList.add('active-tab');
+            btn.classList.remove('text-gray-500', 'hover:bg-gray-50');
+        }
+
+        function openModal(type) {
+            const modal = document.getElementById(type + '-modal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.querySelector('.modal-inner').classList.remove('scale-95', 'opacity-0');
+                modal.querySelector('.modal-inner').classList.add('scale-100', 'opacity-100');
+            }, 10);
+            if (type === 'tour' && !document.getElementById('tour-id').value) {
+                document.getElementById('tour-form').reset();
+                document.getElementById('tour-modal-title').innerText = 'Add Tour Package';
+                document.getElementById('tour-preview').classList.add('hidden');
+            }
+            if (type === 'location' && !document.getElementById('loc-id').value) {
+                document.getElementById('location-form').reset();
+                document.getElementById('location-modal-title').innerText = 'Add Location';
+                document.getElementById('loc-preview').classList.add('hidden');
+                document.getElementById('loc-preview').innerHTML = '';
+                document.getElementById('loc-existing-images').classList.add('hidden');
+                document.getElementById('loc-existing-images').innerHTML = '';
+                locationImagesToDelete = [];
+            }
+        }
+
+        function closeModal(type) {
+            const modal = document.getElementById(type + '-modal');
+            modal.querySelector('.modal-inner').classList.add('scale-95', 'opacity-0');
+            modal.querySelector('.modal-inner').classList.remove('scale-100', 'opacity-100');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                // Clear the hidden ID fields so "Add New" works correctly after editing
+                if (type === 'tour') document.getElementById('tour-id').value = '';
+                if (type === 'location') document.getElementById('loc-id').value = '';
+            }, 200);
+        }
+    </script>
+    <script src="assets/js/currency.js"></script>
+</body>
+
+</html>

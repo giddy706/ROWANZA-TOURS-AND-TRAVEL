@@ -1,0 +1,191 @@
+[
+  {
+    "id": "1771793951740",
+    "firstName": "Gideon",
+    "lastName": "Nderitu",
+    "companyName": "",
+    "random-select": "Kenya",
+    "townCity": "parklands",
+    "phone": "0758050066",
+    "emailAddress": "nderitugideon802@gmail.com",
+    "orderNotes": "",
+    "items": [
+      {
+        "id": "2",
+        "title": "4-Day Diani Beach Escape",
+        "price": 450,
+        "adults": 1,
+        "children": 0,
+        "adultPrice": 450,
+        "childPrice": 320,
+        "extras": [
+          "wifi"
+        ],
+        "extraPrices": {
+          "park": 400,
+          "wifi": 60
+        },
+        "image": "/assets/images/top-destination/02.png",
+        "location": "Diani Beach",
+        "duration": "4 days",
+        "quantity": 1
+      }
+    ],
+    "total": 510,
+    "formattedTotal": "KSh 66,300",
+    "currency": "KES",
+    "paymentMethod": "M-Pesa",
+    "paymentType": "deposit",
+    "amountPaid": 153,
+    "formattedAmountPaid": "KSh 19,890",
+    "remainingBalance": 357,
+    "formattedRemainingBalance": "KSh 46,410",
+    "mpesaPhone": "+254079875804",
+    "paymentStatus": "Deposit Paid",
+    "createdAt": "2026-02-22T20:59:11.744Z"
+  },
+  {
+    "id": "1771794150089",
+    "firstName": "Gideon",
+    "lastName": "Nderitu",
+    "companyName": "",
+    "random-select": "Kenya",
+    "townCity": "parklands",
+    "phone": "726882168",
+    "emailAddress": "nderitugideon802@gmail.com",
+    "orderNotes": "",
+    "items": [
+      {
+        "id": "2",
+        "title": "4-Day Diani Beach Escape",
+        "price": 450,
+        "adults": 1,
+        "children": 0,
+        "adultPrice": 450,
+        "childPrice": 320,
+        "extras": [
+          "park",
+          "wifi"
+        ],
+        "extraPrices": {
+          "park": 400,
+          "wifi": 60
+        },
+        "checkIn": "2026-02-28",
+        "checkOut": "2026-02-26",
+        "image": "/assets/images/top-destination/02.png",
+        "location": "Diani Beach",
+        "duration": "4 days",
+        "quantity": 1
+      }
+    ],
+    "total": 910,
+    "formattedTotal": "KSh 118,300",
+    "currency": "KES",
+    "paymentMethod": "M-Pesa",
+    "paymentType": "full",
+    "amountPaid": 910,
+    "formattedAmountPaid": "KSh 118,300",
+    "remainingBalance": 0,
+    "formattedRemainingBalance": "KSh 0",
+    "mpesaPhone": "+254079875804",
+    "paymentStatus": "Paid",
+    "createdAt": "2026-02-22T21:02:30.089Z"
+  },
+  {
+    "id": "1771794251945",
+    "firstName": "Gideon",
+    "lastName": "Nderitu",
+    "companyName": "",
+    "random-select": "Kenya",
+    "townCity": "parklands",
+    "phone": "0726882169",
+    "emailAddress": "nderitugideon802@gmail.com",
+    "orderNotes": "",
+    "items": [
+      {
+        "id": "3",
+        "title": "3-Day Mount Kenya Adventure",
+        "price": 350,
+        "adults": 0,
+        "children": 0,
+        "adultPrice": 350,
+        "childPrice": 320,
+        "extras": [
+          "park",
+          "wifi"
+        ],
+        "extraPrices": {
+          "park": 400,
+          "wifi": 60
+        },
+        "checkIn": "2026-02-24",
+        "checkOut": "2026-02-28",
+        "image": "/assets/images/top-destination/03.png",
+        "location": "Mount Kenya",
+        "duration": "3 days",
+        "quantity": 1
+      }
+    ],
+    "total": 460,
+    "formattedTotal": "KSh 59,800",
+    "currency": "KES",
+    "paymentMethod": "M-Pesa",
+    "paymentType": "deposit",
+    "amountPaid": 138,
+    "formattedAmountPaid": "KSh 17,940",
+    "remainingBalance": 322,
+    "formattedRemainingBalance": "KSh 41,860",
+    "mpesaPhone": "+254079875804",
+    "paymentStatus": "Deposit Paid",
+    "createdAt": "2026-02-22T21:04:11.945Z"
+  },
+  {
+    "id": "1771795884714",
+    "firstName": "Gideon",
+    "lastName": "Nderitu",
+    "companyName": "",
+    "random-select": "Kenya",
+    "townCity": "parklands",
+    "phone": "0758050066",
+    "emailAddress": "nderitugideon73@gmail.com",
+    "orderNotes": "",
+    "items": [
+      {
+        "id": "2",
+        "title": "4-Day Diani Beach Escape",
+        "price": 450,
+        "adults": 0,
+        "children": 0,
+        "adultPrice": 450,
+        "childPrice": 320,
+        "extras": [
+          "park",
+          "wifi"
+        ],
+        "extraPrices": {
+          "park": 400,
+          "wifi": 60
+        },
+        "checkIn": "",
+        "checkOut": "2026-02-26",
+        "image": "/assets/images/top-destination/02.png",
+        "location": "Diani Beach",
+        "duration": "4 days",
+        "quantity": 1
+      }
+    ],
+    "total": 460,
+    "formattedTotal": "KSh 59,800",
+    "currency": "KES",
+    "paymentMethod": "M-Pesa",
+    "paymentType": "deposit",
+    "amountPaid": 138,
+    "formattedAmountPaid": "KSh 17,940",
+    "remainingBalance": 322,
+    "formattedRemainingBalance": "KSh 41,860",
+    "mpesaPhone": "+254079875804",
+    "paymentStatus": "Deposit Paid",
+    "createdAt": "2026-02-22T21:31:24.717Z"
+  }
+]

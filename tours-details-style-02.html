@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/tours-details-style-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:48:11 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind83a7.css?v=1.9">
+    <link rel="stylesheet" href="assets/css/style83a7.css?v=1.9">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- Iconify -->
+    <script src="./code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    <script src="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+    <!-- Masonry -->
+    <script src="./cdn.jsdelivr.net/npm/masonry-layout%404/dist/masonry.pkgd.min.js"></script>
+    <!-- Fancybox -->
+    <link href="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.css" rel="stylesheet" />
+    <script src="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- NoUiSlider -->
+    <link rel="stylesheet" href="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css">
+    <!-- jQuery -->
+    <script src="./code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Moment.js -->
+    <script src="./cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- Daterangepicker -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <title>ROWANZA TOURS AND TRAVELS</title>
+</head>
+
+<body class="antialiased font-urbanist">
+    <header class="w-full bg-white">
+        <div class="container flex items-center justify-between py-4 mx-auto">
+            <div class="menu-toggle cursor-pointer block lg:hidden">
+                <span class="iconify" data-icon="fe:bar" data-width="24" data-height="24"></span>
+            </div>
+            <div class="header-logo flex items-center gap-2">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" class="w-auto h-10">
+                </a>
+            </div>
+            <nav class="header-menu mx-8 relative">
+                <div class="close-menu-toggle lg:hidden absolute top-2.5 right-2.5">
+                    <span class="iconify" data-icon="ic:sharp-clear" data-width="22" data-height="22"></span>
+                </div>
+                <ul class="flex justify-center lg:gap-4 xl:gap-10 text-base font-semibold text-black">
+                    <li><a href="index.html" class=" transition-all duration-200 hover:text-green-zomp">Home</a></li>
+                    <li><a href="destinations.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Destinations</a></li>
+                    <li><a href="tours.html" class=" transition-all duration-200 hover:text-green-zomp text-black">Tour
+                            Packages</a></li>
+                    <li><a href="about-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">About Us</a></li>
+                    <li><a href="gallery.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Gallery</a></li>
+                    <li><a href="contact-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:0717446976"
+                        class="dynamic-phone flex items-center gap-2 font-bold text-black border border-stroke p-2 rounded-lg hover:bg-green-light transition duration-200">
+                        <span class="iconify text-green-zomp" data-icon="ph:phone-call-bold"></span>
+                        <span class="phone-text">0717446976</span>
+                    </a>
+                </div>
+                <a href="contact-us.html"
+                    class="text-white text-base font-semibold py-2.5 px-6 bg-green-zomp rounded-[200px] transition duration-200 hover:bg-green-zomp-hover shadow-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="scroll-nav" class="[box-shadow:0px_9px_16px_0px_#0000001F] py-6 px-10 bg-white hidden">
+        <ul class="flex items-center justify-center gap-14">
+            <li>
+                <a href="#overview"
+                    class="text-dark-grey font-semibold [&.active]:text-green-zomp transition duration-200 before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-full before:h-[2px] before:scale-x-0 before:bg-green-zomp before:transition before:duration-200 [&.active]:before:scale-x-100 relative">Overview</a>
+            </li>
+            <li>
+                <a href="#what-to-expect"
+                    class="text-dark-grey font-semibold [&.active]:text-green-zomp transition duration-200 before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-full before:h-[2px] before:scale-x-0 before:bg-green-zomp before:transition before:duration-200 [&.active]:before:scale-x-100 relative">What
+                    To Expect</a>
+            </li>
+            <li>
+                <a href="#map"
+                    class="text-dark-grey font-semibold [&.active]:text-green-zomp transition duration-200 before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-full before:h-[2px] before:scale-x-0 before:bg-green-zomp before:transition before:duration-200 [&.active]:before:scale-x-100 relative">Map</a>
+            </li>
+            <li>
+                <a href="#faqs"
+                    class="text-dark-grey font-semibold [&.active]:text-green-zomp transition duration-200 before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-full before:h-[2px] before:scale-x-0 before:bg-green-zomp before:transition before:duration-200 [&.active]:before:scale-x-100 relative">Faqs</a>
+            </li>
+            <li>
+                <a href="#reviews"
+                    class="text-dark-grey font-semibold [&.active]:text-green-zomp transition duration-200 before:content-[''] before:absolute before:left-0 before:-bottom-1 before:w-full before:h-[2px] before:scale-x-0 before:bg-green-zomp before:transition before:duration-200 [&.active]:before:scale-x-100 relative">Reviews</a>
+            </li>
+        </ul>
+    </section>
+
+    <section
+        class="mb-[60px] pt-10 lg:pt-12 border border-t-light-grey border-r-0 border-b-0 border-l-0 tours-details-02">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-[30px]">
+                <div class="col-span-12 md:col-span-6">
+                    <div class="relative w-full">
+                        <div id="dynamic-gallery-container"
+                            class="grid grid-cols-12 gap-4 rounded-2xl w-full border border-light-grey overflow-hidden p-4">
+                            <div class="col-span-12">
+                                <div
+                                    class="w-full h-[300px] md:h-[400px] bg-gray-200 animate-pulse rounded-xl flex items-center justify-center text-gray-500">
+                                    Loading Images...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-6">
+                    <nav class="font-medium text-grey" aria-label="Breadcrumb">
+                        <ul class="flex flex-wrap items-center gap-1 mb-2">
+                            <li><a href="index.html" class="transition duration-200 hover:text-green-zomp">Home</a></li>
+                            <span class="mx-1">/</span>
+                            <li><span class="text-dark-grey">Tours</span></li>
+                        </ul>
+                    </nav>
+                    <h2 id="dynamic-tour-title"
+                        class="text-black text-2xl lg:text-[32px] font-bold mt-6 mb-3 leading-[1.4em]">Loading Tour...
+                    </h2>
+                    <div class="flex flex-wrap items-center gap-2 mb-3">
+                        <span
+                            class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured">Featured</span>
+                        <span
+                            class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-best-seller">Best
+                            seller</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <div class="flex items-center">
+                            <span class="iconify text-orange-yellow" data-icon="mdi:star"></span>
+                            <span class="iconify text-orange-yellow" data-icon="mdi:star"></span>
+                            <span class="iconify text-orange-yellow" data-icon="mdi:star"></span>
+                            <span class="iconify text-orange-yellow" data-icon="mdi:star"></span>
+                            <span class="iconify text-orange-yellow" data-icon="mdi:star"></span>
+                            <span class="text-dark-grey">(7 reviews)</span>
+                        </div>
+                        <ul class="flex items-center gap-7 list-disc marker:text-[#C0C5C9] pl-5">
+                            <li id="dynamic-tour-location" class="text-dark-grey">Loading Location...</li>
+                            <li class="text-dark-grey">1.5k booked</li>
+                        </ul>
+                    </div>
+                    <div class="h-px w-full bg-light-grey my-8"></div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
+                        <div class="flex items-start gap-2">
+                            <span class="iconify text-green-zomp mt-1" data-icon="fluent:clock-24-regular"
+                                data-width="18" data-height="18"></span>
+                            <span id="dynamic-tour-duration" class="text-dark-grey flex-1">Duration: Loading...</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="iconify text-green-zomp mt-1" data-icon="solar:global-linear" data-width="18"
+                                data-height="18"></span>
+                            <span class="text-dark-grey flex-1">Language: English</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="iconify text-green-zomp mt-1" data-icon="lucide:layers" data-width="18"
+                                data-height="18"></span>
+                            <span id="dynamic-tour-type" class="text-dark-grey flex-1">Tour type: Loading...</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="iconify text-green-zomp mt-1" data-icon="majesticons:car-line" data-width="18"
+                                data-height="18"></span>
+                            <span class="text-dark-grey flex-1">Transport: Ferry</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="iconify text-green-zomp mt-1" data-icon="ion:home-outline" data-width="18"
+                                data-height="18"></span>
+                            <span class="text-dark-grey flex-1">Accommodation: Camping</span>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="iconify text-green-zomp mt-1" data-icon="game-icons:knife-fork" data-width="20"
+                                data-height="20"></span>
+                            <span class="text-dark-grey flex-1">Meals: 2 Breakfasts, 1 Dinner</span>
+                        </div>
+                    </div>
+                    <div class="h-px w-full bg-light-grey my-8"></div>
+                    <p id="dynamic-tour-desc" class="text-dark-grey mb-6">Loading description...</p>
+                    <div class="flex items-center gap-2">
+                        <p>Share:</p>
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-10 h-10 rounded-full p-2 shadow-[0px_2px_8px_0px_#0000001A] flex items-center justify-center transition duration-200 hover:bg-green-zomp group">
+                                <span class="iconify text-black group-hover:text-white" data-icon="mdi:instagram"
+                                    data-width="22" data-height="22"></span>
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full p-2 shadow-[0px_2px_8px_0px_#0000001A] flex items-center justify-center transition duration-200 hover:bg-green-zomp group">
+                                <span class="iconify text-black group-hover:text-white" data-icon="bxl:facebook"
+                                    data-width="22" data-height="22"></span>
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full p-2 shadow-[0px_2px_8px_0px_#0000001A] flex items-center justify-center transition duration-200 hover:bg-green-zomp group">
+                                <span class="iconify text-black group-hover:text-white" data-icon="basil:twitter-solid"
+                                    data-width="22" data-height="22"></span>
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full p-2 shadow-[0px_2px_8px_0px_#0000001A] flex items-center justify-center transition duration-200 hover:bg-green-zomp group">
+                                <span class="iconify text-black group-hover:text-white" data-icon="ri:youtube-line"
+                                    data-width="22" data-height="22"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-28">
+        <div class="container">
+            <h2 class="text-black text-center font-bold text-2xl mb-6">Hightlight tour</h2>
+            <div class="relative">
+                <div class="swiper must-know-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/images/tours/hightlight-tour-01.png" alt=""
+                                class="object-cover w-full h-auto rounded-2xl" />
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold text-black transition duration-200 hover:text-green-zomp">
+                                    Prospect Mountain</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/tours/hightlight-tour-02.png" alt=""
+                                class="object-cover w-full h-auto rounded-2xl" />
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold text-black transition duration-200 hover:text-green-zomp">
+                                    Spicy lamb noodles</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/tours/hightlight-tour-03.png" alt=""
+                                class="object-cover w-full h-auto rounded-2xl" />
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold text-black transition duration-200 hover:text-green-zomp">
+                                    Campfire</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/tours/hightlight-tour-04.png" alt=""
+                                class="object-cover w-full h-auto rounded-2xl" />
+                            <div class="p-4">
+                                <h4 class="text-xl font-bold text-black transition duration-200 hover:text-green-zomp">
+                                    Diving</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination must-know-pagination swiper-pagination-custom !-bottom-10"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-6">
+                <div class="col-span-12 lg:col-span-8">
+                    <div class="tours-content">
+                        <div id="overview" class="border border-white-grey rounded-2xl p-6 bg-white mb-6">
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">Overview</h3>
+                            <div id="dynamic-overview-content">
+                                <p class="text-dark-grey">Loading overview...</p>
+                            </div>
+                            <div class="h-px w-full bg-light-grey my-8"></div>
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">What's Included</h3>
+                            <div id="dynamic-included-content">
+                                <p class="text-dark-grey">Loading inclusions...</p>
+                            </div>
+                            <div class="h-px w-full bg-light-grey my-8"></div>
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">Additional Information</h3>
+                            <div id="dynamic-additional-content">
+                                <p class="text-dark-grey">Loading additional information...</p>
+                            </div>
+                            <div class="h-px w-full bg-light-grey my-8"></div>
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">Cancellation Policy</h3>
+                            <div id="dynamic-cancellation-content">
+                                <p class="text-dark-grey">Loading cancellation policy...</p>
+                            </div>
+                        </div>
+
+                        <div id="what-to-expect" class="border border-white-grey rounded-2xl p-6 mt-6 bg-white mb-6">
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">What To Expect</h3>
+                            <div id="dynamic-expect-content">
+                                <p class="text-dark-grey">Loading itinerary...</p>
+                            </div>
+                        </div>
+                        <div id="map" class="border border-white-grey rounded-2xl p-6 mt-6 bg-white mb-6">
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">Map</h3>
+                            <iframe id="dynamic-map-iframe" loading="lazy"
+                                src="https://maps.google.com/maps?q=nairobi&amp;t=m&amp;z=10&amp;output=embed&iwloc=near"
+                                title="map" aria-label="map" class="w-full h-[400px] rounded-2xl"></iframe>
+                        </div>
+                        <div id="faqs" class="border border-white-grey rounded-2xl p-6 mt-6 bg-white mb-6">
+                            <h3 class="text-black text-2xl font-semibold leading-[1.1] mb-6">Frequently Asked Questions
+                            </h3>
+                            <div id="dynamic-faqs-container" class="space-y-4">
+                                <p class="text-dark-grey">Loading FAQs...</p>
+                            </div>
+                        </div>
+                        <div id="reviews" class="border border-white-grey rounded-2xl p-6 mt-6 bg-white">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-black text-2xl font-semibold leading-[1.1]">Review</h3>
+                                <button
+                                    class="write-review py-2 px-4 flex items-center gap-2 font-semibold border-2 border-green-zomp rounded-[200px] text-green-zomp transition duration-200 hover:bg-green-zomp hover:text-white">
+                                    <span class="iconify" data-icon="heroicons-outline:chat" data-width="24"
+                                        data-height="24"></span>
+                                    Write a review
+                                </button>
+                            </div>
+                            <div class="grid grid-cols-12 xl:gap-12">
+                                <div class="col-span-12 xl:col-span-4">
+                                    <div class="flex items-center gap-6">
+                                        <h4 class="text-[40px] font-bold text-black leading-[1.1]">5/5</h4>
+                                        <div class="flex items-center">
+                                            <span class="iconify text-orange-yellow" data-icon="mdi:star"
+                                                data-width="32" data-height="32"></span>
+                                            <span class="iconify text-orange-yellow" data-icon="mdi:star"
+                                                data-width="32" data-height="32"></span>
+                                            <span class="iconify text-orange-yellow" data-icon="mdi:star"
+                                                data-width="32" data-height="32"></span>
+                                            <span class="iconify text-orange-yellow" data-icon="mdi:star"
+                                                data-width="32" data-height="32"></span>
+                                            <span class="iconify text-orange-yellow" data-icon="mdi:star"
+                                                data-width="32" data-height="32"></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-dark-grey">(200 reviews)</span>
+                                </div>
+                                <div class="col-span-12 xl:col-span-8 space-y-3 mt-4 md:mt-0">
+                                    <div class="flex items-center gap-4">
+                                        <p class="w-[60px]">5 stars</p>
+                                        <div
+                                            class="relative w-full h-2 bg-light-grey rounded-full overflow-hidden flex-1">
+                                            <div class="absolute inset-0 bg-green-zomp w-[90%] h-full"></div>
+                                        </div>
+                                        <p class="w-[40px] text-right">180</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-4">
+                                        <p class="w-[60px]">4 stars</p>
+                                        <div
+                                            class="relative w-full h-2 bg-light-grey rounded-full overflow-hidden flex-1">
+                                            <div class="absolute inset-0 bg-green-zomp w-[10%] h-full"></div>
+                                        </div>
+                                        <p class="w-[40px] text-right">20</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-4">
+                                        <p class="w-[60px]">3 stars</p>
+                                        <div
+                                            class="relative w-full h-2 bg-light-grey rounded-full overflow-hidden flex-1">
+                                            <div class="absolute inset-0 bg-green-zomp w-[0%] h-full"></div>
+                                        </div>
+                                        <p class="w-[40px] text-right">0</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-4">
+                                        <p class="w-[60px]">2 stars</p>
+                                        <div
+                                            class="relative w-full h-2 bg-light-grey rounded-full overflow-hidden flex-1">
+                                            <div class="absolute inset-0 bg-green-zomp w-[0%] h-full"></div>
+                                        </div>
+                                        <p class="w-[40px] text-right">0</p>
+                                    </div>
+
+                                    <div class="flex items-center gap-4">
+                                        <p class="w-[60px]">1 stars</p>
+                                        <div
+                                            class="relative w-full h-2 bg-light-grey rounded-full overflow-hidden flex-1">
+                                            <div class="absolute inset-0 bg-green-zomp w-[0%] h-full"></div>
+                                        </div>
+                                        <p class="w-[40px] text-right">0</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dynamic-reviews-container" class="mt-6">
+                                <p class="text-dark-grey">Loading reviews...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="border-2 border-green-zomp rounded-2xl p-6 bg-white-grey">
+                        <h4 class="text-black text-[32px] font-semibold leading-[1.1] mb-6"><span
+                                class="text-dark-grey text-base font-medium mr-2">From</span><span
+                                id="dynamic-tour-price">Loading...</span></h4>
+                        <div class="col-span-8">
+                            <div class="tabs-wrapper">
+                                <div class="border-2 border-green-zomp rounded-lg mb-6 flex">
+                                    <button
+                                        class="flex-1 p-3 text-center font-semibold text-green-zomp [&.active]:bg-green-zomp [&.active]:text-white tabs-btn-panel active">Booking</button>
+                                    <button
+                                        class="flex-1 p-3 text-center font-semibold text-green-zomp [&.active]:bg-green-zomp [&.active]:text-white tabs-btn-panel">Inquiry</button>
+                                </div>
+                                <div class="tabs-img-panel active">
+                                    <p class="text-black font-semibold mb-3">Select Date and Travelers</p>
+                                    <form action="#" class="text-dark-grey">
+                                        <div class="mb-5">
+                                            <input type="text" id="first_name" name="first_name"
+                                                placeholder="First name"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="text" id="last_name" name="last_name" placeholder="Last name"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="email" id="email" name="email" placeholder="Email"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="number" id="phone" name="phone" placeholder="Phone"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input id="check_in" name="check_in" placeholder="Date check in"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none cursor-pointer">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input id="check_out" name="check_out" placeholder="Date check out"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none cursor-pointer">
+                                        </div>
+                                        <p class="mb-5">Total Night: 4</p>
+                                        <p class="mb-2.5">Extra</p>
+                                        <div class="mb-2.5">
+                                            <label class="flex items-center gap-2 text-dark-grey cursor-pointer">
+                                                <input type="checkbox" id="extra-park"
+                                                    class="w-4 h-4 dynamic-extra-checkbox">Park (<span
+                                                    id="extra-park-price">$400.00</span>)
+                                            </label>
+                                        </div>
+                                        <div class="mb-2.5">
+                                            <label class="flex items-center gap-2 text-dark-grey cursor-pointer">
+                                                <input type="checkbox" id="extra-wifi"
+                                                    class="w-4 h-4 dynamic-extra-checkbox">Wifi (<span
+                                                    id="extra-wifi-price">$60.00</span>)
+                                            </label>
+                                        </div>
+                                        <div class="mb-2.5 space-y-2">
+                                            <label class="flex items-center">
+                                                <input type="number" id="children" name="children" value="0" min="0"
+                                                    class="w-20 border border-light-grey rounded-lg py-1 px-4 outline-none cursor-pointer dynamic-guest-input" />
+                                                <span class="ml-2">Children x <span
+                                                        id="child-price-display">$320.00</span></span>
+                                            </label>
+                                            <label class="flex items-center">
+                                                <input type="number" id="adult" name="adult" value="0" min="0"
+                                                    class="w-20 border border-light-grey rounded-lg py-1 px-4 outline-none cursor-pointer dynamic-guest-input" />
+                                                <span class="ml-2">Adult x <span
+                                                        id="adult-price-display">$396.00</span></span>
+                                            </label>
+                                        </div>
+                                        <p class="mb-5 font-bold">Total = <span id="booking-total-display">$0.00</span>
+                                        </p>
+                                        <button
+                                            class="text-white font-semibold py-4 px-6 w-full bg-green-zomp rounded-[200px] transition duration-200 hover:bg-green-zomp-hover hover:-translate-y-[5px]">Booking
+                                            Now</button>
+                                    </form>
+                                </div>
+                                <div class="tabs-img-panel hidden">
+                                    <p class="mb-4">Fill up the form below to tell us what you're looking for</p>
+                                    <form action="#">
+                                        <div class="mb-5">
+                                            <input type="text" id="name" name="name" placeholder="Your name*"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="email" id="email" name="email" placeholder="Email*"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none">
+                                        </div>
+                                        <div class="mb-5">
+                                            <textarea id="destination" name="destination" placeholder="Message" rows="6"
+                                                class="w-full border border-light-grey rounded-lg py-2.5 px-4 outline-none"></textarea>
+                                        </div>
+                                        <button type="submit"
+                                            class="w-full bg-green-zomp text-white text-center font-semibold py-4 px-10 rounded-[200px] uppercase">Send
+                                            enquiry</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:">
+        <div class="container">
+            <h2 class="text-black text-3xl font-bold leading-[1.1] mb-8">Similar experiences</h2>
+            <div class="swiper tours-similar-swiper">
+                <div class="swiper-wrapper" id="similar-tours-container">
+                    <div class="swiper-slide text-center p-10 text-gray-400">Loading similar experiences...</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/01.png" alt="Universal Studios Singapore Special Ticket"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Theme park, Singapore</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Universal Studios Singapore Special
+                                    Ticket</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="ml-2 text-dark-grey">(200
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured transition hover:bg-green-zomp hover:text-white">Featured</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-best-seller transition hover:bg-green-zomp hover:text-white">Best
+                                    seller</a></div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$80.50</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$60.50</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">3 days 2 nights</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/02.png"
+                                    alt="Borobudur Sunrise Experience with Local Guide"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Cultural tour, Indonesia</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Borobudur Sunrise Experience with Local
+                                    Guide</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(145
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured transition hover:bg-green-zomp hover:text-white">Featured</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$59.00</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$45.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">1 day</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/03.png" alt="Phi Phi Island Speedboat Tour"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Island, Thailand</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Phi Phi Island Speedboat Tour</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(320
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured transition hover:bg-green-zomp hover:text-white">Featured</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$55.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">1 day</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/04.png"
+                                    alt="Kuala Lumpur City &amp; Batu Caves Full Day Tour"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">City tour, Malaysia</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Kuala Lumpur City &amp; Batu Caves Full
+                                    Day Tour</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(89
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-cultural transition hover:bg-green-zomp hover:text-white">Cultural</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-popular transition hover:bg-green-zomp hover:text-white">Popular</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$42.00</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$35.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">1 day</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/05.png" alt="El Nido Island Hopping Adventure"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Beach, Philippines</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">El Nido Island Hopping Adventure</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(276
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured transition hover:bg-green-zomp hover:text-white">Featured</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-best-seller transition hover:bg-green-zomp hover:text-white">Best
+                                    seller</a><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-adventure transition hover:bg-green-zomp hover:text-white">Adventure</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$68.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">2 days 1 night</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/06.png" alt="Sapa Trekking &amp; Homestay Experience"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Mountain, Vietnam</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Sapa Trekking &amp; Homestay
+                                    Experience</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(152
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-adventure transition hover:bg-green-zomp hover:text-white">Adventure</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-cultural transition hover:bg-green-zomp hover:text-white">Cultural</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$95.00</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$85.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">3 days 2 nights</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/07.png" alt="Tokyo Highlights &amp; Mt. Fuji Day Trip"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">City, Japan</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Tokyo Highlights &amp; Mt. Fuji Day
+                                    Trip</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(412
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured transition hover:bg-green-zomp hover:text-white">Featured</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-popular transition hover:bg-green-zomp hover:text-white">Popular</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$120.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">1 day</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/08.png" alt="Maldives Resort &amp; Snorkeling Package"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Beach, Maldives</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Maldives Resort &amp; Snorkeling
+                                    Package</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(95
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-luxury transition hover:bg-green-zomp hover:text-white">Luxury</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-best-seller transition hover:bg-green-zomp hover:text-white">Best
+                                    seller</a></div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$420.00</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$350.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">5 days 4 nights</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/09.png" alt="Masai Mara Wildlife Safari Experience"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Safari, Kenya</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Masai Mara Wildlife Safari Experience</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(67
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-adventure transition hover:bg-green-zomp hover:text-white">Adventure</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-wildlife transition hover:bg-green-zomp hover:text-white">Wildlife</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$280.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">4 days 3 nights</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/10.png" alt="Sahara Desert Camel Trekking Tour"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Desert, Morocco</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Sahara Desert Camel Trekking Tour</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(134
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-adventure transition hover:bg-green-zomp hover:text-white">Adventure</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-cultural transition hover:bg-green-zomp hover:text-white">Cultural</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$185.00</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$165.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">3 days 2 nights</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/11.png" alt="Angkor Wat Temple Complex Private Tour"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Historic, Cambodia</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Angkor Wat Temple Complex Private Tour</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(198
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-cultural transition hover:bg-green-zomp hover:text-white">Cultural</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-featured transition hover:bg-green-zomp hover:text-white">Featured</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$75.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">2 days 1 night</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/12.png" alt="Seoul Food &amp; Culture Walking Tour"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-[#F51D35] rounded py-1 px-2 text-white text-sm font-semibold">On
+                                    Sale</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">City, South Korea</span>
+                            </div>
+
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Seoul Food &amp; Culture Walking Tour</a>
+                            </h4>
+
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star-half-full"></span><span class="ml-2 text-dark-grey">(223
+                                    reviews)</span>
+                            </div>
+
+                            <div class="flex flex-wrap items-center gap-2"><a href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-cultural transition hover:bg-green-zomp hover:text-white">Cultural</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-popular transition hover:bg-green-zomp hover:text-white">Popular</a><a
+                                    href="tours.html"
+                                    class="inline-block px-2 py-1 text-sm font-semibold rounded text-darker-grey bg-white-grey category-tag category-food transition hover:bg-green-zomp hover:text-white">Food</a>
+                            </div>
+
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+
+                            <div class="mb-1 text-sm font-bold line-through text-grey">$65.00</div>
+
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$52.00</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">1 day</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="review-modal hidden fixed inset-0 z-50 flex items-center justify-center [&.active]:flex">
+        <div class="overlay absolute inset-0 bg-black/50 z-0"></div>
+        <div class="modal-box w-[650px] relative z-10 rounded-2xl border-[3px] border-green-zomp bg-white p-6">
+            <div class="flex items-center justify-between gap-4 mb-6">
+                <h4 class="text-2xl text-black font-semibold leading-[1.1]">Write a review</h4>
+                <div class="cursor-pointer x-review-modal">
+                    <span class="iconify text-green-zomp" data-icon="ic:sharp-clear" data-width="24"
+                        data-height="24"></span>
+                </div>
+            </div>
+            <p class="text-darker-grey font-semibold mb-2">Rate your experience</p>
+            <div class="flex items-center mb-6">
+                <span class="iconify text-orange-yellow" data-icon="mdi:star" data-width="32" data-height="32"></span>
+                <span class="iconify text-orange-yellow" data-icon="mdi:star" data-width="32" data-height="32"></span>
+                <span class="iconify text-orange-yellow" data-icon="mdi:star" data-width="32" data-height="32"></span>
+                <span class="iconify text-orange-yellow" data-icon="mdi:star" data-width="32" data-height="32"></span>
+                <span class="iconify text-orange-yellow" data-icon="mdi:star" data-width="32" data-height="32"></span>
+            </div>
+            <form id="review-form" action="#" class="text-dark-grey">
+                <div class="mb-5">
+                    <label class="block mb-2 text-dark-grey">Leave a review</label>
+                    <textarea id="review" name="review" placeholder="Highlight your experience" rows="6"
+                        class="w-full bg-white-grey rounded-lg py-2.5 px-4 outline-none"></textarea>
+                </div>
+                <div class="mb-5">
+                    <label class="block mb-2 text-dark-grey">Give your review a title</label>
+                    <input type="text" id="review-title" name="review-title" placeholder="Summarize your experience"
+                        class="w-full bg-white-grey rounded-lg py-2.5 px-4 outline-none">
+                </div>
+                <div class="mb-5">
+                    <label class="block mb-2 text-dark-grey">Upload a photo</label>
+                    <label for="review-photo"
+                        class="w-24 h-24 border-2 border-dashed border-green-zomp rounded-lg flex items-center justify-center cursor-pointer bg-white-grey">
+                        <span class="iconify text-green-zomp" data-icon="proicons:camera" data-width="32"
+                            data-height="32"></span>
+                    </label>
+                    <input type="file" id="review-photo" name="review-photo" accept="image/*" class="hidden">
+                </div>
+                <button class="text-white font-semibold py-4 px-6 w-full bg-green-zomp rounded-[200px]">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-darker-grey text-white overflow-hidden pt-16">
+        <div class="container pb-12">
+            <div class="flex flex-wrap md:flex-nowrap justify-between gap-10">
+                <div class="w-full md:w-[35%]">
+                    <img src="assets/images/logo-footer.png" alt="Logo" class="h-[50px] w-auto mb-7" />
+                    <p class="text-white-grey font-medium mb-10 italic">Luxury Safaris, Beach Escapes & Custom
+                        Adventures Across Kenya and Africa.</p>
+                    <ul class="space-y-4 text-grey">
+
+                        <li class="flex items-center gap-2">
+                            <span class="iconify" data-icon="ph:phone-call" data-width="20" data-height="20"></span>
+                            <a href="tel:0717446976"
+                                class="dynamic-phone hover:text-green-zomp transition italic">0717446976</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <a href="https://wa.me/254717446976"
+                                class="dynamic-whatsapp flex items-center gap-2 hover:text-green-zomp transition italic">
+                                <span class="iconify" data-icon="ic:baseline-whatsapp" data-width="20" data-height="20"
+                                    style="color: #25D366;"></span>
+                                <p class="whatsapp-text">+254 717 446 976</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Top Destinations</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="tours.html?category=kenya" class="hover:text-green-zomp transition">🇰🇪 Kenya
+                                Safaris</a></li>
+                        <li><a href="tours.html?category=africa" class="hover:text-green-zomp transition">🌍 Africa
+                                Tours</a></li>
+                        <li><a href="tours.html?tripType=Beach" class="hover:text-green-zomp transition">🏖 Beach
+                                Holidays</a></li>
+                        <li><a href="tours.html?tripType=Adventure" class="hover:text-green-zomp transition">🧗
+                                Adventure Trips</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Quick Links</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="about-us.html" class="hover:text-green-zomp transition">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-green-zomp transition">Our Gallery</a></li>
+                        <li><a href="contact-us.html" class="hover:text-green-zomp transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-dark-grey py-6 bg-black text-center text-grey">
+            <p>Copyright © 2026 Rowanza Tours and Travels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+    <script src="assets/js/api-client.js"></script>
+    <script src="assets/js/global-dynamic.js"></script>
+    <script src="assets/js/currency.js"></script>
+    <script src="assets/js/tours-details-dynamic.js"></script>
+    <script src="assets/js/main.min83a7.js?v=1.9"></script>
+
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"e5b67894212849e9aa27db559430d1b3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/tours-details-style-02.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:48:21 GMT -->
+
+</html>

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:47:31 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind83a7.css?v=1.9">
+    <link rel="stylesheet" href="assets/css/style83a7.css?v=1.9">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- Iconify -->
+    <script src="./code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    <script src="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+    <!-- Masonry -->
+    <script src="./cdn.jsdelivr.net/npm/masonry-layout%404/dist/masonry.pkgd.min.js"></script>
+    <!-- Fancybox -->
+    <link href="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.css" rel="stylesheet" />
+    <script src="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- NoUiSlider -->
+    <link rel="stylesheet" href="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css">
+    <!-- jQuery -->
+    <script src="./code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Moment.js -->
+    <script src="./cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- Daterangepicker -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <title>ROWANZA TOURS AND TRAVELS</title>
+</head>
+
+<body class="antialiased font-urbanist">
+    <header class="w-full bg-white">
+        <div class="container flex items-center justify-between py-4 mx-auto">
+            <div class="menu-toggle cursor-pointer block lg:hidden">
+                <span class="iconify" data-icon="fe:bar" data-width="24" data-height="24"></span>
+            </div>
+            <div class="header-logo flex items-center gap-2">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" class="w-auto h-10">
+                </a>
+            </div>
+            <nav class="header-menu mx-8 relative">
+                <div class="close-menu-toggle lg:hidden absolute top-2.5 right-2.5">
+                    <span class="iconify" data-icon="ic:sharp-clear" data-width="22" data-height="22"></span>
+                </div>
+                <ul class="flex justify-center lg:gap-4 xl:gap-10 text-base font-semibold text-black">
+                    <li><a href="index.html"
+                            class="text-green-zomp transition-all duration-200 hover:text-green-zomp">Home</a></li>
+                    <li><a href="destinations.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Destinations</a></li>
+                    <li><a href="tours.html" class=" transition-all duration-200 hover:text-green-zomp text-black">Tour
+                            Packages</a></li>
+                    <li><a href="about-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">About Us</a></li>
+                    <li><a href="gallery.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Gallery</a></li>
+                    <li><a href="contact-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:0717446976"
+                        class="dynamic-phone flex items-center gap-2 font-bold text-black border border-stroke p-2 rounded-lg hover:bg-green-light transition duration-200">
+                        <span class="iconify text-green-zomp" data-icon="ph:phone-call-bold"></span>
+                        <span class="phone-text">0717446976</span>
+                    </a>
+                </div>
+                <a href="contact-us.html"
+                    class="text-white text-base font-semibold py-2.5 px-6 bg-green-zomp rounded-[200px] transition duration-200 hover:bg-green-zomp-hover shadow-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section
+        class="bg-cover bg-center bg-no-repeat py-20 md:py-[130px] mx-4 md:mx-6 rounded-[32px] flex flex-col items-center justify-center text-white mb-[60px] md:mb-24"
+        style="background-image: url('assets/images/hero-banner.png')">
+        <div class="px-4 md:px-0 wrapper">
+            <h1 class="text-[35px] sm:text-[45px] md:text-[56px] font-bold leading-[1.3em] mb-4">
+                Discover Africa’s <br />
+                Wild Beauty
+            </h1>
+            <p class="mb-4 md:mb-10 text-lg font-semibold">Luxury Safaris, Beach Escapes & Custom Adventures Across
+                Kenya and
+                Africa.</p>
+            <div
+                class="bg-white rounded-2xl md:rounded-[200px] p-4 md:pl-8 md:flex items-center md:space-x-6 mx-auto lg:min-w-[820px]">
+                <div class="relative flex-1 group">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="iconify text-dark-grey" data-icon="ep:location" data-width="24"
+                            data-height="24"></span>
+                        <div>
+                            <p class="mb-1 text-sm font-semibold text-black py-1 px-4">Where to?</p>
+                            <select id="home-search-location"
+                                class="py-1 px-4 appearance-none cursor-pointer w-full text-dark-grey font-medium focus-visible:outline-none">
+                                <option class="px-4" value="">Search a place or actitivity</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-px h-10 bg-light-grey hidden md:block"></div>
+                <div class="relative flex-1 group">
+                    <div class="flex items-center mb-4 md:mb-0">
+                        <span class="iconify text-dark-grey" data-icon="formkit:date" data-width="22"
+                            data-height="22"></span>
+                        <div>
+                            <p class="mb-1 text-sm font-semibold text-black py-1 px-4">When?</p>
+                            <input type="text" id="date_range" name="date_range" placeholder="Select dates"
+                                class="text-dark-grey py-1 px-4 w-full font-medium outline-none">
+                        </div>
+                    </div>
+                </div>
+                <button id="home-search-btn"
+                    class="flex-shrink-0 p-3 rounded-full bg-green-zomp w-full md:w-auto flex items-center justify-center transition duration-200 hover:-translate-y-[5px]">
+                    <span class="text-white iconify" data-icon="iconoir:search" data-width="24" data-height="24"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+                <div class="text-center items">
+                    <img src="assets/images/features-01.svg" alt="" class="w-[72px] h-auto mx-auto mb-6">
+                    <h4 class="mb-2 text-xl font-semibold text-black">Experienced Safari Guides</h4>
+                    <p class="text-dark-grey">Our expert guides ensure every safari <br /> is safe, educational, and
+                        unforgettable.</p>
+                </div>
+                <div class="text-center items">
+                    <img src="assets/images/features-02.svg" alt="" class="w-[72px] h-auto mx-auto mb-6">
+                    <h4 class="mb-2 text-xl font-semibold text-black">Custom Itineraries</h4>
+                    <p class="text-dark-grey">Tailor-made adventures designed <br /> around your preferences and
+                        budget.</p>
+                </div>
+                <div class="text-center items">
+                    <img src="assets/images/features-03.svg" alt="" class="w-[72px] h-auto mx-auto mb-6">
+                    <h4 class="mb-2 text-xl font-semibold text-black">24/7 Reliable Support</h4>
+                    <p class="text-dark-grey">We are with you at every step, <br /> providing round-the-clock
+                        assistance.</p>
+                </div>
+                <div class="text-center items">
+                    <img src="assets/images/features-04.svg" alt="" class="w-[72px] h-auto mx-auto mb-6">
+                    <h4 class="mb-2 text-xl font-semibold text-black">Best Price & Security</h4>
+                    <p class="text-dark-grey">Price guarantees and secure <br /> payment options for your peace of
+                        mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-black font-bold text-[32px] leading-[1.1em]">🇰🇪 Kenya Featured Tour Packages</h2>
+                <div class="hidden sm:flex items-center gap-4">
+                    <div class="swiper-button-prev top-destination-prev !relative !w-12 !h-12 !text-dark-grey !mt-0 !left-0 !right-0 rounded-full p-2 bg-white-grey transition duration-200 hover:!text-white hover:bg-green-zomp"
+                        style="--swiper-navigation-size: 20px"></div>
+                    <div class="swiper-button-next top-destination-next !relative !w-12 !h-12 !text-dark-grey !mt-0 !left-0 !right-0 rounded-full p-2 bg-white-grey transition duration-200 hover:!text-white hover:bg-green-zomp"
+                        style="--swiper-navigation-size: 20px"></div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="swiper top-destination-swipper">
+                    <div class="swiper-wrapper" id="kenya-tours-container">
+                        <!-- Maasai Mara -->
+                        <div class="swiper-slide group relative min-h-[400px] rounded-2xl overflow-hidden">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/top-destination/01.png" alt="Maasai Mara"
+                                    class="absolute inset-0 z-0 object-cover w-full h-full" />
+                            </a>
+                            <div
+                                class="absolute top-4 right-4 z-20 bg-orange-yellow text-black font-bold py-1 px-3 rounded-full text-sm shadow-lg">
+                                🔥 Top Selling</div>
+                            <div
+                                class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#00000008] before:to-[#000] before:z-[1] opacity-60">
+                            </div>
+                            <h2
+                                class="text-white font-bold text-[28px] absolute bottom-6 left-6 z-10 transition duration-200 group-hover:-translate-y-32 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">5-Day Maasai Mara Safari</a>
+                            </h2>
+                            <div
+                                class="absolute z-10 transition-all duration-200 transform translate-y-6 opacity-0 bottom-6 left-6 right-6 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="mb-4 text-white text-sm">Experience the Big Five and Great Migration.
+                                    Authentic Maasai culture.</p>
+                                <div class="mb-4 text-white font-bold text-lg">Starting from $850</div>
+                                <a href="tours-details-style-01.html"
+                                    class="border border-white text-sm text-white font-semibold py-3 px-4 rounded-[200px] transition duration-200 hover:bg-green-zomp hover:border-green-zomp">View
+                                    Itinerary</a>
+                            </div>
+                        </div>
+                        <!-- Diani Beach -->
+                        <div class="swiper-slide group relative min-h-[400px] rounded-2xl overflow-hidden">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/top-destination/02.png" alt="Diani Beach"
+                                    class="absolute inset-0 z-0 object-cover w-full h-full" />
+                            </a>
+                            <div
+                                class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#00000008] before:to-[#000] before:z-[1] opacity-60">
+                            </div>
+                            <h2
+                                class="text-white font-bold text-[28px] absolute bottom-6 left-6 z-10 transition duration-200 group-hover:-translate-y-32 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">4-Day Diani Beach Escape</a>
+                            </h2>
+                            <div
+                                class="absolute z-10 transition-all duration-200 transform translate-y-6 opacity-0 bottom-6 left-6 right-6 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="mb-4 text-white text-sm">Relax on powder-white sand beaches. Kisite Marine
+                                    Park snorkeling.</p>
+                                <div class="mb-4 text-white font-bold text-lg">Starting from $450</div>
+                                <a href="tours-details-style-01.html"
+                                    class="border border-white text-sm text-white font-semibold py-3 px-4 rounded-[200px] transition duration-200 hover:bg-green-zomp hover:border-green-zomp">View
+                                    Itinerary</a>
+                            </div>
+                        </div>
+                        <!-- Mount Kenya -->
+                        <div class="swiper-slide group relative min-h-[400px] rounded-2xl overflow-hidden">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/top-destination/03.png" alt="Mount Kenya"
+                                    class="absolute inset-0 z-0 object-cover w-full h-full" />
+                            </a>
+                            <div
+                                class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#00000008] before:to-[#000] before:z-[1] opacity-60">
+                            </div>
+                            <h2
+                                class="text-white font-bold text-[28px] absolute bottom-6 left-6 z-10 transition duration-200 group-hover:-translate-y-32 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">3-Day Mount Kenya Adventure</a>
+                            </h2>
+                            <div
+                                class="absolute z-10 transition-all duration-200 transform translate-y-6 opacity-0 bottom-6 left-6 right-6 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="mb-4 text-white text-sm">Trek through alpine meadows on Africa’s 2nd-highest
+                                    mountain.</p>
+                                <div class="mb-4 text-white font-bold text-lg">Starting from $350</div>
+                                <a href="tours-details-style-01.html"
+                                    class="border border-white text-sm text-white font-semibold py-3 px-4 rounded-[200px] transition duration-200 hover:bg-green-zomp hover:border-green-zomp">View
+                                    Itinerary</a>
+                            </div>
+                        </div>
+                        <!-- Lake Nakuru -->
+                        <div class="swiper-slide group relative min-h-[400px] rounded-2xl overflow-hidden">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/top-destination/04.png" alt="Lake Nakuru"
+                                    class="absolute inset-0 z-0 object-cover w-full h-full" />
+                            </a>
+                            <div
+                                class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#00000008] before:to-[#000] before:z-[1] opacity-60">
+                            </div>
+                            <h2
+                                class="text-white font-bold text-[28px] absolute bottom-6 left-6 z-10 transition duration-200 group-hover:-translate-y-32 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">2-Day Lake Nakuru Tour</a>
+                            </h2>
+                            <div
+                                class="absolute z-10 transition-all duration-200 transform translate-y-6 opacity-0 bottom-6 left-6 right-6 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="mb-4 text-white text-sm">Witness thousands of flamingos and the majestic white
+                                    rhinos.</p>
+                                <div class="mb-4 text-white font-bold text-lg">Starting from $200</div>
+                                <a href="tours-details-style-01.html"
+                                    class="border border-white text-sm text-white font-semibold py-3 px-4 rounded-[200px] transition duration-200 hover:bg-green-zomp hover:border-green-zomp">View
+                                    Itinerary</a>
+                            </div>
+                        </div>
+                        <!-- Serengeti -->
+                        <div class="swiper-slide group relative min-h-[400px] rounded-2xl overflow-hidden">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/top-destination/05.png" alt="Serengeti"
+                                    class="absolute inset-0 z-0 object-cover w-full h-full" />
+                            </a>
+                            <div
+                                class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#00000008] before:to-[#000] before:z-[1] opacity-60">
+                            </div>
+                            <h2
+                                class="text-white font-bold text-[28px] absolute bottom-6 left-6 z-10 transition duration-200 group-hover:-translate-y-32 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Serengeti National Park</a>
+                            </h2>
+                            <div
+                                class="absolute z-10 transition-all duration-200 transform translate-y-6 opacity-0 bottom-6 left-6 right-6 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="mb-4 text-white text-sm">Experience the endless plains and legendary wildlife
+                                    migrations.</p>
+                                <div class="mb-4 text-white font-bold text-lg">Starting from $950</div>
+                                <a href="tours-details-style-01.html"
+                                    class="border border-white text-sm text-white font-semibold py-3 px-4 rounded-[200px] transition duration-200 hover:bg-green-zomp hover:border-green-zomp">View
+                                    Itinerary</a>
+                            </div>
+                        </div>
+                        <!-- Zanzibar -->
+                        <div class="swiper-slide group relative min-h-[400px] rounded-2xl overflow-hidden">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/top-destination/06.png" alt="Zanzibar"
+                                    class="absolute inset-0 z-0 object-cover w-full h-full" />
+                            </a>
+                            <div
+                                class="absolute inset-0 before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#00000008] before:to-[#000] before:z-[1] opacity-60">
+                            </div>
+                            <h2
+                                class="text-white font-bold text-[28px] absolute bottom-6 left-6 z-10 transition duration-200 group-hover:-translate-y-32 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">Zanzibar Island</a>
+                            </h2>
+                            <div
+                                class="absolute z-10 transition-all duration-200 transform translate-y-6 opacity-0 bottom-6 left-6 right-6 group-hover:translate-y-0 group-hover:opacity-100">
+                                <p class="mb-4 text-white text-sm">Pristine beaches and rich cultural heritage in the
+                                    Spice Island.</p>
+                                <div class="mb-4 text-white font-bold text-lg">Starting from $600</div>
+                                <a href="tours-details-style-01.html"
+                                    class="border border-white text-sm text-white font-semibold py-3 px-4 rounded-[200px] transition duration-200 hover:bg-green-zomp hover:border-green-zomp">View
+                                    Itinerary</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination top-destination-pagination !-bottom-11 sm:hidden"></div>
+            </div>
+            <div class="flex justify-center mt-14 sm:mt-10">
+                <a href="tours.html?category=kenya"
+                    class="text-green-zomp py-4 px-6 rounded-[200px] border border-green-zomp font-semibold transition duration-200 hover:text-white hover:bg-green-zomp capitalize">See
+                    All Kenya Tours</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <h2 class="text-black font-bold text-[32px] leading-[1.1em] capitalize mb-10">Offers to inspire you</h2>
+            <div class="grid md:grid-cols-2 gap-4 md:gap-6">
+                <div class="rounded-2xl md:rounded-3xl bg-cover bg-center bg-no-repeat relative overflow-hidden"
+                    style="background-image: url('assets/images/inspire-01.png');">
+                    <div class="absolute inset-0 rounded-2xl md:rounded-3xl"
+                        style="background: linear-gradient(134deg, #11A191 18%, #01AA9000 100%);"></div>
+                    <div class="relative p-[34px] lg:pr-[157px] h-full flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-white font-bold text-[32px] leading-[1.3] mb-4">Kenya Safari Experiences
+                            </h2>
+                            <p class="text-white mb-[60px]">Explore the wild wonders of Kenya with our expert guides.
+                                Discover the Big Five in their natural habitat.</p>
+                        </div>
+                        <a href="tours.html"
+                            class="block w-max text-green-zomp capitalize p-4 bg-white rounded-[200px] border border-green-zomp font-semibold transition duration-200 hover:text-white hover:bg-green-zomp">
+                            See all activities
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl md:rounded-3xl bg-cover bg-center bg-no-repeat relative overflow-hidden"
+                    style="background-image: url('assets/images/inspire-02.png');">
+                    <div
+                        class="absolute inset-0 rounded-2xl md:rounded-3xl bg-gradient-to-r from-[#322153]/80 to-transparent">
+                    </div>
+                    <div class="relative p-[34px] lg:pr-[157px] h-full flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-white font-bold text-[32px] leading-[1.3] mb-4">African Beach Holidays</h2>
+                            <p class="text-white mb-[60px]">Relax on the pristine white sands of Zanzibar and Diani. The
+                                perfect end to your safari adventure.</p>
+                        </div>
+                        <a href="tours.html"
+                            class="block w-max text-green-zomp capitalize p-4 bg-white rounded-[200px] border border-green-zomp font-semibold transition duration-200 hover:text-white hover:bg-green-zomp">
+                            See all activities
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <h2 class="text-black font-bold text-[32px] leading-[1.1em] capitalize mb-10">🌍 Africa Featured Tour
+                Packages</h2>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                id="africa-tours-container">
+
+                <!-- Serengeti -->
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/01.png" alt="Serengeti"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                                <span
+                                    class="absolute top-4 right-4 bg-orange-yellow rounded py-1 px-2 text-black text-sm font-semibold shadow-md">🔥
+                                    Top Selling</span>
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Serengeti National Park, Tanzania</span>
+                            </div>
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">6-Day Serengeti & Ngorongoro Safari</a>
+                            </h4>
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="ml-2 text-dark-grey">(120 reviews)</span>
+                            </div>
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$1,200</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">6 days</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Zanzibar -->
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/02.png" alt="Zanzibar"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Zanzibar Island</span>
+                            </div>
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">5-Day Zanzibar Island Retreat</a>
+                            </h4>
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="ml-2 text-dark-grey">(85 reviews)</span>
+                            </div>
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$750</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">5 days</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Victoria Falls -->
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/03.png" alt="Victoria Falls"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Victoria Falls, Zimbabwe/Zambia</span>
+                            </div>
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">4-Day Victoria Falls Adventure</a>
+                            </h4>
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="ml-2 text-dark-grey">(210 reviews)</span>
+                            </div>
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$600</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">4 days</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Egypt -->
+                <article class="relative overflow-hidden transition duration-200">
+                    <div class="bg-white border rounded-2xl border-light-grey">
+                        <div class="relative overflow-hidden rounded-t-2xl">
+                            <a href="tours-details-style-01.html">
+                                <img src="assets/images/tours/04.png" alt="Egypt"
+                                    class="object-cover w-full h-auto transition duration-300 hover:scale-105">
+                            </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="iconify" data-icon="ep:location" data-width="14" data-height="14"></span>
+                                <span class="text-sm text-dark-grey">Giza Pyramids, Egypt</span>
+                            </div>
+                            <h4
+                                class="mb-2 text-base font-bold text-black transition duration-200 line-clamp-2 hover:text-green-zomp">
+                                <a href="tours-details-style-01.html">7-Day Egypt Wonders Tour</a>
+                            </h4>
+                            <div class="flex items-center mb-2 text-orange-yellow">
+                                <span class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="iconify" data-icon="mdi:star"></span><span
+                                    class="iconify" data-icon="mdi:star"></span><span class="iconify"
+                                    data-icon="mdi:star"></span><span class="ml-2 text-dark-grey">(150 reviews)</span>
+                            </div>
+                            <div class="h-px my-4 border-t border-light-grey"></div>
+                            <div class="flex items-center justify-between gap-2">
+                                <span class="flex items-center gap-1">
+                                    <span>From</span>
+                                    <span class="text-base font-bold text-green-zomp">$950</span>
+                                </span>
+                                <span class="flex items-center gap-1">
+                                    <span class="iconify text-dark-grey" data-icon="fluent:clock-24-regular"
+                                        data-width="15" data-height="15"></span>
+                                    <div class="text-sm text-dark-grey">7 days</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-[60px] xl:py-[100px] bg-green-light">
+        <div class="container">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-black font-bold text-[32px] md:text-[45px] leading-[1.1em] mb-4">What Our Clients Say
+                </h2>
+                <p class="text-dark-grey max-w-[600px] mx-auto">Real stories from real travelers who explored Africa
+                    with Rowanza Tours and Travels.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8" id="testimonials-container">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-light-grey transition duration-300 hover:shadow-md">
+                    <div class="flex items-center gap-1 text-orange-yellow mb-4">
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                    </div>
+                    <p class="text-dark-grey italic mb-6">"Our safari in Maasai Mara was beyond expectations. Rowanza
+                        Tours handled everything perfectly, from the luxury tented camps to our amazing guide who found
+                        the Big Five in just two days!"</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-green-zomp flex items-center justify-center text-white font-bold">
+                            JD</div>
+                        <div>
+                            <h4 class="text-black font-bold">John Doe</h4>
+                            <p class="text-sm text-grey">Traveler from USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-light-grey transition duration-300 hover:shadow-md">
+                    <div class="flex items-center gap-1 text-orange-yellow mb-4">
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                    </div>
+                    <p class="text-dark-grey italic mb-6">"Diani Beach was a paradise! The custom package curated for
+                        our honeymoon was flawless. Highly recommend the sunset dhow cruise. Thank you Rowanza for these
+                        memories."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-green-zomp flex items-center justify-center text-white font-bold">
+                            SM</div>
+                        <div>
+                            <h4 class="text-black font-bold">Sarah Miller</h4>
+                            <p class="text-sm text-grey">Traveler from UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-light-grey transition duration-300 hover:shadow-md">
+                    <div class="flex items-center gap-1 text-orange-yellow mb-4">
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                        <span class="iconify" data-icon="mdi:star"></span>
+                    </div>
+                    <p class="text-dark-grey italic mb-6">"Seeing the Victoria Falls was a bucket-list item, and doing
+                        it with Rowanza was the best decision. Their local knowledge and attention to detail are
+                        unmatched in Africa."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-green-zomp flex items-center justify-center text-white font-bold">
+                            AM</div>
+                        <div>
+                            <h4 class="text-black font-bold">Ahmed Mohammed</h4>
+                            <p class="text-sm text-grey">Traveler from Dubai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wildlife Gallery Section -->
+    <section class="mb-[60px] md:mb-24 py-[60px] xl:py-[100px]">
+        <div class="container mb-10">
+            <div class="text-center">
+                <h2 class="text-black font-bold text-[32px] md:text-[45px] leading-[1.1em] mb-4">Wildlife Captured</h2>
+                <p class="text-dark-grey">A glimpse into the stunning wildlife encounters on our safaris.</p>
+            </div>
+        </div>
+        <div class="swiper gallerySwiper">
+            <div class="swiper-wrapper" id="gallery-container">
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/01.png" alt="Majestic Lion"
+                        class="object-cover w-full h-[300px]" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/02.png" alt="African Elephant"
+                        class="object-cover w-full h-[300px]" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/03.png" alt="Graceful Giraffe"
+                        class="object-cover w-full h-[300px]" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/04.png" alt="Leopard in Tree"
+                        class="object-cover w-full h-[300px]" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/05.png" alt="Zebra Herd"
+                        class="object-cover w-full h-[300px]" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/06.png" alt="White Rhinoceros"
+                        class="object-cover w-full h-[300px]" />
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <div class="bg-cover bg-center rounded-2xl px-6 py-12 lg:pl-[108px] lg:pr-10 lg:pt-[120px] lg:pb-[90px] text-white"
+                style="background-image: url('assets/images/subscribe-bg.png')">
+                <div class="p-6 md:p-10 bg-darker-grey bg-opacity-90 rounded-2xl w-full lg:w-fit">
+                    <h2 class="text-2xl md:text-[40px] font-bold mb-4">Ready to Experience Africa?</h2>
+                    <p class="text-white-grey mb-8 max-w-full md:max-w-[540px] text-sm md:text-base">
+                        Join us for an unforgettable journey through the heart of the wild. Our experts are ready to
+                        craft your perfect safari or beach escape.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                        <a href="https://wa.me/254717446976" target="_blank"
+                            class="bg-green-zomp py-3 px-6 text-white font-semibold rounded-full whitespace-nowrap transition duration-200 hover:-translate-y-[5px] flex items-center justify-center gap-2">
+                            <span class="iconify" data-icon="ic:baseline-whatsapp" data-width="20"
+                                data-height="20"></span>
+                            WhatsApp Chat</a>
+                        <a href="contact-us.html"
+                            class="bg-white py-3 px-6 text-darker-grey font-semibold rounded-full whitespace-nowrap transition duration-200 hover:-translate-y-[5px] flex items-center justify-center">
+                            Request a Quote</a>
+                        <a href="tours.html"
+                            class="bg-orange-yellow py-3 px-6 text-black font-semibold rounded-full whitespace-nowrap transition duration-200 hover:-translate-y-[5px] flex items-center justify-center">
+                            Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="swiper gallerySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/01.png" alt="Gallery 1" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/02.png" alt="Gallery 2" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/03.png" alt="Gallery 3" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/04.png" alt="Gallery 4" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/05.png" alt="Gallery 5" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/06.png" alt="Gallery 6" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/07.png" alt="Gallery 7" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/08.png" alt="Gallery 8" class="object-cover w-full h-auto" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/list-gallery/09.png" alt="Gallery 9" class="object-cover w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-darker-grey text-white overflow-hidden pt-16">
+        <div class="container pb-12">
+            <div class="flex flex-wrap md:flex-nowrap justify-between gap-10">
+                <div class="w-full md:w-[35%]">
+                    <img src="assets/images/logo-footer.png" alt="Logo" class="h-[50px] w-auto mb-7" />
+                    <p class="text-white-grey font-medium mb-10 italic">Luxury Safaris, Beach Escapes & Custom
+                        Adventures Across Kenya and Africa.</p>
+                    <ul class="space-y-4 text-grey">
+
+                        <li class="flex items-center gap-2">
+                            <span class="iconify" data-icon="ph:phone-call" data-width="20" data-height="20"></span>
+                            <a href="tel:0717446976"
+                                class="dynamic-phone hover:text-green-zomp transition italic">0717446976</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <a href="https://wa.me/254717446976"
+                                class="dynamic-whatsapp flex items-center gap-2 hover:text-green-zomp transition italic">
+                                <span class="iconify" data-icon="ic:baseline-whatsapp" data-width="20" data-height="20"
+                                    style="color: #25D366;"></span>
+                                <p class="whatsapp-text">+254 717 446 976</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Top Destinations</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="tours.html?category=kenya" class="hover:text-green-zomp transition">🇰🇪 Kenya
+                                Safaris</a></li>
+                        <li><a href="tours.html?category=africa" class="hover:text-green-zomp transition">🌍 Africa
+                                Tours</a></li>
+                        <li><a href="tours.html?tripType=Beach" class="hover:text-green-zomp transition">🏖 Beach
+                                Holidays</a></li>
+                        <li><a href="tours.html?tripType=Adventure" class="hover:text-green-zomp transition">🧗
+                                Adventure Trips</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Quick Links</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="about-us.html" class="hover:text-green-zomp transition">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-green-zomp transition">Our Gallery</a></li>
+                        <li><a href="contact-us.html" class="hover:text-green-zomp transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-dark-grey py-6 bg-black text-center text-grey">
+            <p>Copyright © 2026 Rowanza Tours and Travels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-6 right-6 z-[9999]">
+        <a href="https://wa.me/254717446976" target="_blank"
+            class="dynamic-whatsapp flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-2xl transition-transform hover:scale-110">
+            <span class="iconify text-white" data-icon="logos:whatsapp-icon" data-width="32" data-height="32"></span>
+        </a>
+    </div>
+    <script src="assets/js/api-client.js"></script>
+    <script src="assets/js/global-dynamic.js"></script>
+    <script src="assets/js/currency.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+    <script src="assets/js/home-dynamic.js"></script>
+    <script src="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+    <script src="assets/js/main.min83a7.js?v=1.9"></script>
+
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"e5b67894212849e9aa27db559430d1b3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:48:05 GMT -->
+
+</html>

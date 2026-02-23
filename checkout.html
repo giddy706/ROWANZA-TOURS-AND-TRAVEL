@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<!-- Mirrored from html.physcode.com/travel/demo-main/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Feb 2026 13:49:09 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tailwind83a7.css?v=1.9">
+    <link rel="stylesheet" href="assets/css/style83a7.css?v=1.9">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- Iconify -->
+    <script src="./code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+    <script src="./cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+    <!-- Masonry -->
+    <script src="./cdn.jsdelivr.net/npm/masonry-layout%404/dist/masonry.pkgd.min.js"></script>
+    <!-- Fancybox -->
+    <link href="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.css" rel="stylesheet" />
+    <script src="./cdn.jsdelivr.net/npm/%40fancyapps/ui%405.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- NoUiSlider -->
+    <link rel="stylesheet" href="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css">
+    <!-- jQuery -->
+    <script src="./code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Moment.js -->
+    <script src="./cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- Daterangepicker -->
+    <link rel="stylesheet" href="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="./cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <title>ROWANZA TOURS AND TRAVELS</title>
+</head>
+
+<body class="antialiased font-urbanist">
+    <header class="w-full bg-white">
+        <div class="container flex items-center justify-between py-4 mx-auto">
+            <div class="menu-toggle cursor-pointer block lg:hidden">
+                <span class="iconify" data-icon="fe:bar" data-width="24" data-height="24"></span>
+            </div>
+            <div class="header-logo flex items-center gap-2">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo" class="w-auto h-10">
+                </a>
+            </div>
+            <nav class="header-menu mx-8 relative">
+                <div class="close-menu-toggle lg:hidden absolute top-2.5 right-2.5">
+                    <span class="iconify" data-icon="ic:sharp-clear" data-width="22" data-height="22"></span>
+                </div>
+                <ul class="flex justify-center lg:gap-4 xl:gap-10 text-base font-semibold text-black">
+                    <li><a href="index.html" class=" transition-all duration-200 hover:text-green-zomp">Home</a></li>
+                    <li><a href="destinations.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Destinations</a></li>
+                    <li><a href="tours.html" class=" transition-all duration-200 hover:text-green-zomp text-black">Tour
+                            Packages</a></li>
+                    <li><a href="about-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">About Us</a></li>
+                    <li><a href="gallery.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Gallery</a></li>
+                    <li><a href="contact-us.html"
+                            class=" transition-all duration-200 hover:text-green-zomp text-black">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:0717446976"
+                        class="dynamic-phone flex items-center gap-2 font-bold text-black border border-stroke p-2 rounded-lg hover:bg-green-light transition duration-200">
+                        <span class="iconify text-green-zomp" data-icon="ph:phone-call-bold"></span>
+                        <span class="phone-text">0717446976</span>
+                    </a>
+                </div>
+                <a href="contact-us.html"
+                    class="text-white text-base font-semibold py-2.5 px-6 bg-green-zomp rounded-[200px] transition duration-200 hover:bg-green-zomp-hover shadow-md">Book
+                    Now</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="py-10 lg:py-12 border border-b-0 border-l-0 border-r-0 border-t-light-grey">
+        <div class="container">
+            <nav class="font-medium text-grey" aria-label="Breadcrumb">
+                <ul class="flex flex-wrap items-center gap-1 mb-2">
+                    <li><a href="index.html" class="transition duration-200 hover:text-green-zomp">Home</a></li><span
+                        class="mx-1">/</span>
+                    <li><span class="text-dark-grey">My Account</span></li>
+                </ul>
+            </nav>
+            <h1 class="text-black text-[40px] font-bold leading-[1.1em]">Checkout</h1>
+        </div>
+    </section>
+
+    <section class="mb-[60px] md:mb-24">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-8">
+                <div class="col-span-12 lg:col-span-7">
+                    <h4 class="mb-5 text-2xl font-semibold text-black">Billing Details</h4>
+                    <form id="checkout-form" class="">
+                        <div class="grid grid-cols-1 gap-5 mb-5 md:grid-cols-2">
+                            <div class="wrap">
+                                <label for="firstName" class="block mb-2 text-sm text-black">First name <span
+                                        class="text-[#FF0000]">*</span></label>
+                                <input type="text" id="firstName" name="firstName"
+                                    class="w-full px-4 py-3 rounded-lg bg-white-grey" required>
+                            </div>
+                            <div class="wrap">
+                                <label for="lastName" class="block mb-2 text-sm text-black">Last name <span
+                                        class="text-[#FF0000]">*</span></label>
+                                <input type="text" id="lastName" name="lastName"
+                                    class="w-full px-4 py-3 rounded-lg bg-white-grey" required>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="companyName" class="block mb-2 text-sm text-black">Company name
+                                (optional)</label>
+                            <input type="text" id="companyName" name="companyName"
+                                class="w-full px-4 py-3 rounded-lg bg-white-grey">
+                        </div>
+                        <div class="relative mb-5">
+                            <label for="random-select" class="block mb-2 text-sm text-black">Country / Region <span
+                                    class="text-[#FF0000]">*</span></label>
+                            <select id="random-select" name="random-select"
+                                class="w-full px-4 py-3 rounded-lg appearance-none bg-white-grey" required>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czechia (Czech Republic)">Czechia (Czech Republic)</option>
+                                <option value="Democratic Republic of the Congo">Democratic Republic of the Congo
+                                </option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Eswatini (fmr. 'Swaziland')">Eswatini (fmr. "Swaziland")</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Holy See">Holy See</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya" selected>Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia">Micronesia</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar (formerly Burma)">Myanmar (formerly Burma)</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="North Korea">North Korea</option>
+                                <option value="North Macedonia">North Macedonia</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestine State">Palestine State</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines
+                                </option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-Leste">Timor-Leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States of America">United States of America</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                            <span class="absolute pointer-events-none text-dark-grey top-11 right-3">
+                                <span class="iconify text-dark-grey" data-icon="meteor-icons:angle-down" data-width="20"
+                                    data-height="20"></span>
+                            </span>
+                        </div>
+                        <div class="mb-5">
+                            <label for="townCity" class="block mb-2 text-sm text-black">Town / City <span
+                                    class="text-[#FF0000]">*</span></label>
+                            <input type="text" id="townCity" name="townCity"
+                                class="w-full px-4 py-3 rounded-lg bg-white-grey" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="phone" class="block mb-2 text-sm text-black">Phone <span
+                                    class="text-[#FF0000]">*</span></label>
+                            <input type="number" id="phone" name="phone"
+                                class="w-full px-4 py-3 rounded-lg bg-white-grey" required>
+                        </div>
+                        <div class="mb-10">
+                            <label for="emailAddress" class="block mb-2 text-sm text-black">Email address <span
+                                    class="text-[#FF0000]">*</span></label>
+                            <input type="email" id="emailAddress" name="emailAddress"
+                                class="w-full px-4 py-3 rounded-lg bg-white-grey" required>
+                        </div>
+                        <h4 class="mb-2.5 text-2xl font-semibold text-black">Additional Information</h4>
+                        <div class="mb-5">
+                            <label for="orderNotes" class="block mb-2 text-sm text-black">Order notes (optional)</label>
+                            <textarea id="orderNotes" name="orderNotes" rows="5"
+                                class="w-full px-4 py-3 rounded-lg bg-white-grey"
+                                placeholder="Note about your order..."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-span-12 lg:col-span-5">
+                    <div class="bg-white-grey rounded-2xl p-[30px]">
+                        <h4 class="mb-2 text-2xl font-semibold text-black">Your order</h4>
+                        <ul id="order-items-container">
+                            <li class="flex justify-between py-5 border-b">
+                                <p class="font-semibold">Product</p>
+                                <p class="font-semibold">Subtotal</p>
+                            </li>
+                            <li class="flex justify-between py-5 border-b">
+                                <p>It Won't Be Easy <span class="">x1</span></p>
+                                <p>$17.00</p>
+                            </li>
+                            <li class="flex justify-between py-5 border-b">
+                                <p>It Won't Be Easy <span class="">x1</span></p>
+                                <p>$17.00</p>
+                            </li>
+                            <li class="flex justify-between py-5 border-b">
+                                <p>A Memoir of a Life Interrupted <span class="">x1</span></p>
+                                <p>$24.00</p>
+                            </li>
+                            <li class="flex justify-between py-5 font-semibold border-b">
+                                <p>Subtotal</p>
+                                <p id="checkout-subtotal">$750.00</p>
+                            </li>
+                            <li class="flex justify-between py-5 text-lg font-semibold border-b">
+                                <p>Total</p>
+                                <p id="checkout-total">$750.00</p>
+                            </li>
+                            <li class="py-5 border-b" id="payment-method-section">
+                                <div class="mb-4">
+                                    <span class="font-semibold text-black">Payment Method</span>
+                                </div>
+                                <!-- M-Pesa Option -->
+                                <div class="bg-[#E8F5E9] border-2 border-[#4CBB17] rounded-xl p-4 mb-4">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 bg-[#4CBB17] rounded-full flex items-center justify-center shrink-0">
+                                            <span class="iconify text-white" data-icon="logos:mpesa"
+                                                data-width="22"></span>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold text-[#2E7D32]">Pay via M-Pesa</p>
+                                            <p class="text-xs text-gray-600">Secure mobile money payment</p>
+                                        </div>
+                                    </div>
+                                    <!-- Payment Type: Full or Deposit -->
+                                    <div class="mb-4">
+                                        <label class="block text-sm font-semibold text-black mb-2">Payment Type</label>
+                                        <div class="flex gap-3">
+                                            <label class="flex-1 cursor-pointer">
+                                                <input type="radio" name="paymentType" value="full" class="peer hidden"
+                                                    checked>
+                                                <div
+                                                    class="peer-checked:border-[#4CBB17] peer-checked:bg-[#E8F5E9] border-2 border-gray-200 rounded-lg p-3 text-center transition hover:border-[#4CBB17]">
+                                                    <p class="font-bold text-sm">Full Payment</p>
+                                                    <p class="text-xs text-gray-500" id="full-amount-label">100% of
+                                                        total</p>
+                                                </div>
+                                            </label>
+                                            <label class="flex-1 cursor-pointer">
+                                                <input type="radio" name="paymentType" value="deposit"
+                                                    class="peer hidden">
+                                                <div
+                                                    class="peer-checked:border-[#4CBB17] peer-checked:bg-[#E8F5E9] border-2 border-gray-200 rounded-lg p-3 text-center transition hover:border-[#4CBB17]">
+                                                    <p class="font-bold text-sm">Deposit (30%)</p>
+                                                    <p class="text-xs text-gray-500" id="deposit-amount-label">To
+                                                        reserve your spot</p>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Amount to Pay -->
+                                    <div class="bg-white rounded-lg p-3 mb-4 border">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Amount to Pay Now:</span>
+                                            <span class="font-bold text-lg text-[#4CBB17]" id="amount-to-pay">KSh
+                                                0</span>
+                                        </div>
+                                        <div class="flex justify-between items-center mt-1 text-xs text-gray-400"
+                                            id="balance-row" style="display: none;">
+                                            <span>Remaining Balance:</span>
+                                            <span id="remaining-balance">KSh 0</span>
+                                        </div>
+                                    </div>
+                                    <!-- M-Pesa Phone Number -->
+                                    <div>
+                                        <label for="mpesaPhone"
+                                            class="block text-sm font-semibold text-black mb-2">M-Pesa Phone
+                                            Number</label>
+                                        <div class="relative">
+                                            <span
+                                                class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm font-semibold">+254</span>
+                                            <input type="tel" id="mpesaPhone" name="mpesaPhone"
+                                                placeholder="7XX XXX XXX" maxlength="9"
+                                                class="w-full pl-14 pr-4 py-3 rounded-lg bg-white border border-gray-200 focus:border-[#4CBB17] focus:ring-1 focus:ring-[#4CBB17] outline-none transition"
+                                                required>
+                                        </div>
+                                        <p class="text-xs text-gray-400 mt-1">You will receive an STK push to complete
+                                            payment</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button id="place-order"
+                            class="text-white font-semibold py-3 px-6 w-full bg-green-zomp rounded-[200px] mt-10">Complete
+                            Booking</button>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+    </section>
+
+    <footer class="bg-darker-grey text-white overflow-hidden pt-16">
+        <div class="container pb-12">
+            <div class="flex flex-wrap md:flex-nowrap justify-between gap-10">
+                <div class="w-full md:w-[35%]">
+                    <img src="assets/images/logo-footer.png" alt="Logo" class="h-[50px] w-auto mb-7" />
+                    <p class="text-white-grey font-medium mb-10 italic">Luxury Safaris, Beach Escapes & Custom
+                        Adventures Across Kenya and Africa.</p>
+                    <ul class="space-y-4 text-grey">
+
+                        <li class="flex items-center gap-2">
+                            <span class="iconify" data-icon="ph:phone-call" data-width="20" data-height="20"></span>
+                            <a href="tel:0717446976"
+                                class="dynamic-phone hover:text-green-zomp transition italic">0717446976</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <a href="https://wa.me/254717446976"
+                                class="dynamic-whatsapp flex items-center gap-2 hover:text-green-zomp transition italic">
+                                <span class="iconify" data-icon="ic:baseline-whatsapp" data-width="20" data-height="20"
+                                    style="color: #25D366;"></span>
+                                <p class="whatsapp-text">+254 717 446 976</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Top Destinations</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="tours.html?category=kenya" class="hover:text-green-zomp transition">🇰🇪 Kenya
+                                Safaris</a></li>
+                        <li><a href="tours.html?category=africa" class="hover:text-green-zomp transition">🌍 Africa
+                                Tours</a></li>
+                        <li><a href="tours.html?tripType=Beach" class="hover:text-green-zomp transition">🏖 Beach
+                                Holidays</a></li>
+                        <li><a href="tours.html?tripType=Adventure" class="hover:text-green-zomp transition">🧗
+                                Adventure Trips</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-1/2 md:w-1/5">
+                    <h6 class="text-white font-bold mb-6 text-xl">Quick Links</h6>
+                    <ul class="space-y-4 text-grey">
+                        <li><a href="about-us.html" class="hover:text-green-zomp transition">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-green-zomp transition">Our Gallery</a></li>
+                        <li><a href="contact-us.html" class="hover:text-green-zomp transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-dark-grey py-6 bg-black text-center text-grey">
+            <p>Copyright © 2026 Rowanza Tours and Travels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="./cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+    <script src="assets/js/currency.js"></script>
+    <script src="assets/js/cart-manager.js"></script>
+    <script src="assets/js/api-client.js"></script>
+    <script src="assets/js/global-dynamic.js"></script>
+    <script src="assets/js/main.min83a7.js?v=1.9"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('checkout-form');
+            const placeOrderBtn = document.getElementById('place-order');
+
+            // Helper to format price
+            const fmtPrice = (amount) => {
+                if (window.currencyManager) return window.currencyManager.formatPrice(amount);
+                return 'KSh ' + amount.toFixed(2);
+            };
+
+            // --- Update payment amounts ---
+            const updatePaymentAmounts = () => {
+                const total = window.cartManager ? window.cartManager.getCartTotal() : 0;
+                const paymentType = document.querySelector('input[name="paymentType"]:checked')?.value || 'full';
+                const amountToPay = paymentType === 'deposit' ? Math.ceil(total * 0.3) : total;
+                const remaining = total - amountToPay;
+
+                const amountEl = document.getElementById('amount-to-pay');
+                const balanceRow = document.getElementById('balance-row');
+                const remainingEl = document.getElementById('remaining-balance');
+                const fullLabel = document.getElementById('full-amount-label');
+                const depositLabel = document.getElementById('deposit-amount-label');
+
+                if (amountEl) amountEl.textContent = fmtPrice(amountToPay);
+                if (remainingEl) remainingEl.textContent = fmtPrice(remaining);
+                if (balanceRow) balanceRow.style.display = paymentType === 'deposit' ? 'flex' : 'none';
+                if (fullLabel) fullLabel.textContent = fmtPrice(total);
+                if (depositLabel) depositLabel.textContent = fmtPrice(Math.ceil(total * 0.3));
+            };
+
+            // Listen for payment type changes
+            document.addEventListener('change', (e) => {
+                if (e.target.name === 'paymentType') updatePaymentAmounts();
+            });
+
+            const renderCheckoutOrder = () => {
+                const container = document.getElementById('order-items-container');
+                const subtotalEl = document.getElementById('checkout-subtotal');
+                const totalEl = document.getElementById('checkout-total');
+
+                if (!container || !window.cartManager) return;
+
+                const items = window.cartManager.getItems();
+
+                // Keep the header
+                const header = `<li class="flex justify-between py-5 border-b">
+                                <p class="font-semibold">Product</p>
+                                <p class="font-semibold">Subtotal</p>
+                            </li>`;
+
+                container.innerHTML = header + items.map(item => {
+                    let passengerPrices = '';
+                    if (item.adults > 0) passengerPrices += `<br>Adults: ${item.adults} x ${fmtPrice(item.adultPrice || item.price)}`;
+                    if (item.children > 0) passengerPrices += `<br>Children: ${item.children} x ${fmtPrice(item.childPrice || 0)}`;
+
+                    let extrasList = '';
+                    if (item.extras && item.extras.length > 0) {
+                        extrasList = '<br>Extras: ' + item.extras.map(e => `${e} (${fmtPrice(item.extraPrices[e] || 0)})`).join(', ');
+                    }
+
+                    // Calculate subtotal for this item
+                    let itemSubtotal = (item.adults * (item.adultPrice || item.price)) + (item.children * (item.childPrice || 0));
+                    if (item.extras) {
+                        item.extras.forEach(e => itemSubtotal += (item.extraPrices[e] || 0));
+                    }
+
+                    return `
+                    <li class="flex justify-between py-5 border-b text-sm">
+                        <div>
+                            <p class="font-bold">${item.title}</p>
+                            <p class="text-xs text-dark-grey mt-1">
+                                ${item.checkIn ? `Check-in: ${item.checkIn}<br>` : ''}
+                                ${item.checkOut ? `Check-out: ${item.checkOut}<br>` : ''}
+                                ${passengerPrices}
+                                ${extrasList}
+                            </p>
+                        </div>
+                        <p class="font-bold">${fmtPrice(itemSubtotal)}</p>
+                    </li>
+                    `;
+                }).join('');
+
+                // Totals
+                let total = 0;
+                items.forEach(item => {
+                    total += (item.adults * (item.adultPrice || item.price)) + (item.children * (item.childPrice || 0));
+                    if (item.extras) {
+                        item.extras.forEach(e => total += (item.extraPrices[e] || 0));
+                    }
+                });
+                const formattedTotal = fmtPrice(total);
+
+                const footer = `
+                    <li class="flex justify-between py-5 font-semibold border-b text-lg">
+                        <p>Total</p>
+                        <p id="checkout-total">${formattedTotal}</p>
+                    </li>
+                    <li class="py-5 border-b" id="payment-method-section">
+                        <div class="mb-4">
+                            <span class="font-semibold text-black">Payment Method</span>
+                        </div>
+                        <div class="bg-[#E8F5E9] border-2 border-[#4CBB17] rounded-xl p-4 mb-4">
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="w-10 h-10 bg-[#4CBB17] rounded-full flex items-center justify-center shrink-0">
+                                    <span class="iconify text-white" data-icon="logos:mpesa" data-width="22"></span>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[#2E7D32]">Pay via M-Pesa</p>
+                                    <p class="text-xs text-gray-600">Secure mobile money payment</p>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-sm font-semibold text-black mb-2">Payment Type</label>
+                                <div class="flex gap-3">
+                                    <label class="flex-1 cursor-pointer">
+                                        <input type="radio" name="paymentType" value="full" class="peer hidden" checked>
+                                        <div class="peer-checked:border-[#4CBB17] peer-checked:bg-[#E8F5E9] border-2 border-gray-200 rounded-lg p-3 text-center transition hover:border-[#4CBB17]">
+                                            <p class="font-bold text-sm">Full Payment</p>
+                                            <p class="text-xs text-gray-500" id="full-amount-label">${formattedTotal}</p>
+                                        </div>
+                                    </label>
+                                    <label class="flex-1 cursor-pointer">
+                                        <input type="radio" name="paymentType" value="deposit" class="peer hidden">
+                                        <div class="peer-checked:border-[#4CBB17] peer-checked:bg-[#E8F5E9] border-2 border-gray-200 rounded-lg p-3 text-center transition hover:border-[#4CBB17]">
+                                            <p class="font-bold text-sm">Deposit (30%)</p>
+                                            <p class="text-xs text-gray-500" id="deposit-amount-label">${fmtPrice(Math.ceil(total * 0.3))}</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-3 mb-4 border">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-gray-600">Amount to Pay Now:</span>
+                                    <span class="font-bold text-lg text-[#4CBB17]" id="amount-to-pay">${formattedTotal}</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-1 text-xs text-gray-400" id="balance-row" style="display: none;">
+                                    <span>Remaining Balance:</span>
+                                    <span id="remaining-balance">KSh 0</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="mpesaPhone" class="block text-sm font-semibold text-black mb-2">M-Pesa Phone Number</label>
+                                <div class="relative">
+                                    <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm font-semibold">+254</span>
+                                    <input type="tel" id="mpesaPhone" name="mpesaPhone" placeholder="7XX XXX XXX" maxlength="9"
+                                        class="w-full pl-14 pr-4 py-3 rounded-lg bg-white border border-gray-200 focus:border-[#4CBB17] focus:ring-1 focus:ring-[#4CBB17] outline-none transition" required>
+                                </div>
+                                <p class="text-xs text-gray-400 mt-1">You will receive an STK push to complete payment</p>
+                            </div>
+                        </div>
+                    </li>
+                `;
+                container.innerHTML += footer;
+
+                // Update payment amounts after rendering
+                updatePaymentAmounts();
+            };
+
+            window.addEventListener('currencyChange', renderCheckoutOrder);
+            renderCheckoutOrder();
+
+            if (placeOrderBtn) {
+                placeOrderBtn.addEventListener('click', async (e) => {
+                    e.preventDefault();
+
+                    if (!form.checkValidity()) {
+                        form.reportValidity();
+                        return;
+                    }
+
+                    // Validate M-Pesa phone
+                    const mpesaPhone = document.getElementById('mpesaPhone')?.value;
+                    if (!mpesaPhone || mpesaPhone.length < 9) {
+                        alert('Please enter a valid M-Pesa phone number (e.g. 7XX XXX XXX)');
+                        document.getElementById('mpesaPhone')?.focus();
+                        return;
+                    }
+
+                    const formData = new FormData(form);
+                    const orderData = Object.fromEntries(formData.entries());
+
+                    const total = window.cartManager.getCartTotal();
+                    const paymentType = document.querySelector('input[name="paymentType"]:checked')?.value || 'full';
+                    const amountPaid = paymentType === 'deposit' ? Math.ceil(total * 0.3) : total;
+
+                    orderData.items = window.cartManager.getItems();
+                    orderData.total = total;
+                    orderData.formattedTotal = document.getElementById('checkout-total')?.textContent || fmtPrice(total);
+                    orderData.currency = window.currencyManager ? window.currencyManager.getCurrency() : 'KES';
+
+                    // Payment details
+                    orderData.paymentMethod = 'M-Pesa';
+                    orderData.paymentType = paymentType;
+                    orderData.amountPaid = amountPaid;
+                    orderData.formattedAmountPaid = fmtPrice(amountPaid);
+                    orderData.remainingBalance = total - amountPaid;
+                    orderData.formattedRemainingBalance = fmtPrice(total - amountPaid);
+                    orderData.mpesaPhone = '+254' + mpesaPhone;
+                    orderData.paymentStatus = paymentType === 'full' ? 'Paid' : 'Deposit Paid';
+
+                    try {
+                        placeOrderBtn.disabled = true;
+                        placeOrderBtn.textContent = 'Processing M-Pesa Payment...';
+
+                        const response = await apiClient.checkout(orderData);
+
+                        if (response.success) {
+                            window.cartManager.clearCart();
+                            window.location.href = `booking-success.html?id=${response.bookingId}`;
+                        } else {
+                            throw new Error('Failed to process booking');
+                        }
+                    } catch (err) {
+                        console.error('Error:', err);
+                        alert('There was an error processing your booking. Please try again.');
+                    } finally {
+                        placeOrderBtn.disabled = false;
+                        placeOrderBtn.textContent = 'Complete Booking';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
