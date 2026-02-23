@@ -6,7 +6,7 @@ const fs = require('fs-extra');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const DB_FILE = path.join(__dirname, 'database.json');
 const BOOKINGS_FILE = path.join(__dirname, 'bookings.json');
 const INQUIRIES_FILE = path.join(__dirname, 'inquiries.json');
@@ -27,8 +27,8 @@ const transporter = nodemailer.createTransport({
 app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(UPLOADS_DIR));
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-app.use(express.static(__dirname));
+app.use('/assets', express.static(path.join(__dirname, '..', 'assets')));
+app.use(express.static(path.join(__dirname, '..')));
 
 // Multer Storage Configuration
 const storage = multer.diskStorage({
