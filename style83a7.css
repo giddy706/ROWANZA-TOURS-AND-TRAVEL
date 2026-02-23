@@ -1,0 +1,282 @@
+.category-best-seller {
+    background-color: #ffebf5;
+    color: #cf3881;
+}
+
+.category-featured {
+    background-color: #fff0ed;
+    color: #e9652e;
+}
+
+.category-hot {
+    background-color: #e6f7f4;
+    color: #01806c;
+}
+
+.category-adventure {
+    background-color: #4ba7fc;
+    color: #ffffff;
+}
+
+.category-cultural {
+    background-color: #fc961b;
+    color: #ffffff;
+}
+
+.category-popular,
+.category-luxury {
+    background-color: #e8edf1;
+    color: #4f5e71;
+}
+
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        background-color: #aaafb6 !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #01aa90 !important;
+    }
+}
+
+.swiper-pagination-custom {
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 32px !important;
+        height: 10px !important;
+        border-radius: 5px;
+        background-color: #01aa90;
+    }
+}
+
+.shop-details {
+    .thumbSwiper {
+        .swiper-slide {
+            border: 2px solid transparent;
+        }
+
+        .swiper-slide-thumb-active {
+            border: 2px solid #01aa90;
+            border-radius: 8px;
+
+            img {
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.tours-details-02 {
+    .thumbSwiper02 {
+        .swiper-slide {
+            border: 2px solid transparent;
+        }
+
+        .swiper-slide-thumb-active {
+            border: 2px solid #01aa90;
+            border-radius: 8px;
+
+            img {
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.star-wrapper .iconify {
+    /* color: transparent; */
+    stroke: #fc961b;
+    stroke-width: 1.5;
+}
+
+.star-wrapper.active .iconify {
+    color: #fc961b;
+    stroke: #fc961b;
+}
+
+.noUi-horizontal {
+    height: 4px !important;
+}
+
+.noUi-tooltip {
+    display: none !important;
+}
+
+.noUi-handle {
+    top: -10px !important;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 100% !important;
+    box-shadow: none !important;
+    border: 2px solid #01aa90;
+
+    &::before {
+        display: none !important;
+    }
+
+    &::after {
+        display: none !important;
+    }
+}
+
+.noUi-target {
+    box-shadow: none !important;
+    background: #e8edf1 !important;
+    border: none !important;
+}
+
+.noUi-handle-lower {
+    cursor: pointer !important;
+    right: -24px !important;
+}
+
+.noUi-handle-upper {
+    cursor: pointer !important;
+    right: 0 !important;
+}
+
+.checkout-box {
+    background-color: #dcd7e3;
+    position: relative;
+    border-radius: 2px;
+
+    &::before {
+        content: "";
+        display: block;
+        border: 15px solid #dcd7e2;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        top: -15px;
+        left: 0;
+        margin: -15px 0 0 25px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .header-menu {
+        position: fixed;
+        top: 0;
+        left: -320px;
+        width: 320px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-y: auto;
+
+        &.active {
+            left: 0;
+        }
+
+        ul {
+            padding-top: 20px;
+
+            &.active {
+                padding-top: 0;
+            }
+        }
+
+        &.active ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .nav-father.active {
+            .nav-wrapper {
+                margin-top: 12px;
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.3s ease;
+                width: 100%;
+            }
+        }
+
+        .nav-wrapper {
+            height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding-left: 15px;
+        }
+    }
+
+    body.active::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-filter {
+        position: fixed;
+        top: 0;
+        left: -320px;
+        width: 320px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 1000;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .sidebar-filter.active {
+        left: 0;
+    }
+
+    .overlay-for-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+    }
+
+    .overlay-for-sidebar.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 640px) {
+    #scroll-nav {
+        display: none !important;
+    }
+    .swiper-button-next {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .swiper-button-prev {
+        width: 38px !important;
+        height: 38px !important;
+    }
+}
